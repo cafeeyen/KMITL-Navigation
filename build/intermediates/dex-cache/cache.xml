@@ -21,48 +21,12 @@
     </item>
     <item
         is-multidex="true"
-        jar="C:\Users\Dell\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\24.2.1\support-annotations-24.2.1.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.3"
-        sha1="8de3aafecbdf98a61db6427f008f2d515bcd2544">
-        <dex dex="D:\Project\NyaMeh\app\build\intermediates\transforms\dex\debug\folders\1000\10\support-annotations-24.2.1_c3a1738e7ea2176e6e33ab2a488fb0ea00f44ce1\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
         jar="C:\Users\Dell\AppData\Local\Android\sdk\extras\m2repository\com\android\support\constraint\constraint-layout-solver\1.0.0-alpha9\constraint-layout-solver-1.0.0-alpha9.jar"
         jumboMode="true"
         optimize="true"
         revision="24.0.3"
         sha1="6a908fd0803cc5f65b007101002aec06dc7544da">
         <dex dex="D:\Project\NyaMeh\app\build\intermediates\transforms\dex\debug\folders\1000\10\constraint-layout-solver-1.0.0-alpha9_51d00c4dc91c4954f569c28ec8e63ad21c278537\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="D:\Project\NyaMeh\app\build\intermediates\exploded-aar\com.android.support\support-fragment\24.2.1\jars\libs\internal_impl-24.2.1.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.3"
-        sha1="5f64d657e838e8375135c0f6057a7ff8fab6a50e">
-        <dex dex="D:\Project\NyaMeh\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-24.2.1_0f277ceabee561ff85720f2043f4798230a0c948\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="D:\Project\NyaMehv01\app\build\intermediates\exploded-aar\com.android.support\support-fragment\24.2.1\jars\libs\internal_impl-24.2.1.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.3"
-        sha1="5f64d657e838e8375135c0f6057a7ff8fab6a50e">
-        <dex dex="D:\Project\NyaMehv01\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-24.2.1_f688d4c752324190ed9f5390c38c0e47713cca67\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="D:\Project\NyaMehv01\app\build\intermediates\exploded-aar\com.android.support\support-media-compat\24.2.1\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.3"
-        sha1="09b462bbcb77650284bd6614f1a32f360ef369f8">
-        <dex dex="D:\Project\NyaMehv01\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-media-compat-24.2.1_a26ef900fb3767eaf92dd8a8fb98f2cdd6465bc6\classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -75,15 +39,6 @@
     </item>
     <item
         is-multidex="true"
-        jar="D:\Project\NyaMehv01\app\build\intermediates\exploded-aar\com.android.support\support-compat\24.2.1\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.3"
-        sha1="0ecb4b595fa0f0f8018a149ace3ea6525624f94e">
-        <dex dex="D:\Project\NyaMehv01\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-compat-24.2.1_19757b7fd275e266886a581a5435e75c6cfbde80\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
         jar="D:\Project\NyaMeh\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
         jumboMode="true"
         optimize="true"
@@ -93,39 +48,12 @@
     </item>
     <item
         is-multidex="true"
-        jar="D:\Project\NyaMehv01\app\build\intermediates\exploded-aar\com.android.support\support-compat\24.2.1\jars\libs\internal_impl-24.2.1.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.3"
-        sha1="7e4389bd133359a2ff88623ff1e4ff93d6e6f780">
-        <dex dex="D:\Project\NyaMehv01\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-24.2.1_7e477eb789bebd097ef120606db474ae6f88c683\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
         jar="D:\Project\NyaMeh\app\build\intermediates\exploded-aar\com.android.support\support-core-ui\24.2.1\jars\libs\internal_impl-24.2.1.jar"
         jumboMode="true"
         optimize="true"
         revision="24.0.3"
         sha1="867dad63c33388ff8c7644b236579355036d075f">
         <dex dex="D:\Project\NyaMeh\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-24.2.1_edd72c9ae3376b57e45c5dd42bd5305421505fac\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="D:\Project\NyaMehv01\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.3"
-        sha1="6dca6e22b2ba1971d9b49f00d01c54037c865768">
-        <dex dex="D:\Project\NyaMehv01\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_e2e3720b68c06a897a66a5b0c978868afccc0ba2\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="D:\Project\NyaMeh\app\build\intermediates\exploded-aar\com.android.support\support-v4\24.2.1\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.3"
-        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
-        <dex dex="D:\Project\NyaMeh\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-v4-24.2.1_e8f6bb564644719163b9c345cd5e2d3a47f77565\classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -147,30 +75,12 @@
     </item>
     <item
         is-multidex="true"
-        jar="D:\Project\NyaMeh\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\24.2.1\jars\classes.jar"
+        jar="D:\Project\NyaMehv01\app\build\intermediates\exploded-aar\com.journeyapps\zxing-android-embedded\3.4.0\jars\classes.jar"
         jumboMode="true"
         optimize="true"
         revision="24.0.3"
-        sha1="94bc1dfb84dcc8b6f6f8f7cc726d7b2dd39c1574">
-        <dex dex="D:\Project\NyaMeh\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-animated-vector-drawable-24.2.1_3ef7fd60e1e5be8ead9b280cb3a51d105a654871\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\Dell\.gradle\caches\modules-2\files-2.1\com.google.zxing\core\3.2.0\e019d15a13a9786f881141d2df6654b8510bce8b\core-3.2.0.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.3"
-        sha1="e019d15a13a9786f881141d2df6654b8510bce8b">
-        <dex dex="D:\Project\NyaMeh\app\build\intermediates\transforms\dex\debug\folders\1000\10\core-3.2.0_82cae3501175e45c19326a5cde9c1328fe961262\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="D:\Project\NyaMeh\app\build\intermediates\exploded-aar\com.android.support.constraint\constraint-layout\1.0.0-alpha9\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.3"
-        sha1="f2b64f6a762f61a2379d6a79af03e2ee56eefe0b">
-        <dex dex="D:\Project\NyaMeh\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support.constraint-constraint-layout-1.0.0-alpha9_7da282df83170e4b53fb34686a6755009c5a0788\classes.dex" />
+        sha1="0e1f104cf60bfe34147ef670229f2635789c79a4">
+        <dex dex="D:\Project\NyaMehv01\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.journeyapps-zxing-android-embedded-3.4.0_5f3827117bf4c05e273a469891b2248096816a52\classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -189,6 +99,15 @@
         revision="24.0.3"
         sha1="b9a1ac78ad7ef3abedc4a4b30cd92bcacb939d1f">
         <dex dex="D:\Project\NyaMeh\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-fragment-24.2.1_10e292eedf479e9ee29824b151e335bcd67a585e\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Dell\.gradle\caches\modules-2\files-2.1\com.google.zxing\core\3.2.1\2287494d4f5f9f3a9a2bb6980e3f32053721b315\core-3.2.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="2287494d4f5f9f3a9a2bb6980e3f32053721b315">
+        <dex dex="D:\Project\NyaMehv01\app\build\intermediates\transforms\dex\debug\folders\1000\10\core-3.2.1_47664ca8d6bf9d4c72a3126eecf8f2360794efa7\classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -228,33 +147,6 @@
     </item>
     <item
         is-multidex="true"
-        jar="D:\Project\NyaMehv01\app\build\intermediates\exploded-aar\com.android.support.constraint\constraint-layout\1.0.0-alpha9\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.3"
-        sha1="f2b64f6a762f61a2379d6a79af03e2ee56eefe0b">
-        <dex dex="D:\Project\NyaMehv01\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support.constraint-constraint-layout-1.0.0-alpha9_fb981f1f5647588632bf202b0ccb8d468fd8cc34\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="D:\Project\NyaMehv01\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\24.2.1\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.3"
-        sha1="43b2dba6b5a0b14527961b75329d0b90025f15ea">
-        <dex dex="D:\Project\NyaMehv01\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-appcompat-v7-24.2.1_473fe853ad3e9eab34d2c02cc165f80e66558075\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="D:\Project\NyaMehv01\app\build\intermediates\exploded-aar\com.android.support\support-media-compat\24.2.1\jars\libs\internal_impl-24.2.1.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.3"
-        sha1="fbf8da429efd5ad21e02e3e5ecaa1efc4167878d">
-        <dex dex="D:\Project\NyaMehv01\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-24.2.1_f769ae136f3133f121584a231b73ec784ebac5fe\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
         jar="D:\Project\NyaMeh\app\build\intermediates\exploded-aar\com.android.support\support-compat\24.2.1\jars\libs\internal_impl-24.2.1.jar"
         jumboMode="true"
         optimize="true"
@@ -279,6 +171,159 @@
         revision="24.0.3"
         sha1="e7f3132168957eefc46229fc32c3bd464642b71e">
         <dex dex="D:\Project\NyaMehv01\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-core-ui-24.2.1_0a4042bca01f8795a5c56768dd1155252f4d7200\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\Project\NyaMeh\app\build\intermediates\exploded-aar\com.android.support\support-media-compat\24.2.1\jars\libs\internal_impl-24.2.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="fbf8da429efd5ad21e02e3e5ecaa1efc4167878d">
+        <dex dex="D:\Project\NyaMeh\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-24.2.1_7f76c36563783d213610e608ff6d8c47dcacad31\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\Project\NyaMehv01\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="b56e6065263b897f04565ecab79926f54f6c9346">
+        <dex dex="D:\Project\NyaMehv01\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_1cfadc83149beaf7807f6687561e1155bcdd362a\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\Project\NyaMeh\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\24.2.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="43b2dba6b5a0b14527961b75329d0b90025f15ea">
+        <dex dex="D:\Project\NyaMeh\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-appcompat-v7-24.2.1_ed2b16cc407771c6f63f827ccb2acea45801991c\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Dell\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\24.2.1\support-annotations-24.2.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="8de3aafecbdf98a61db6427f008f2d515bcd2544">
+        <dex dex="D:\Project\NyaMeh\app\build\intermediates\transforms\dex\debug\folders\1000\10\support-annotations-24.2.1_c3a1738e7ea2176e6e33ab2a488fb0ea00f44ce1\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\Project\NyaMeh\app\build\intermediates\exploded-aar\com.android.support\support-fragment\24.2.1\jars\libs\internal_impl-24.2.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="5f64d657e838e8375135c0f6057a7ff8fab6a50e">
+        <dex dex="D:\Project\NyaMeh\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-24.2.1_0f277ceabee561ff85720f2043f4798230a0c948\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\Project\NyaMehv01\app\build\intermediates\exploded-aar\com.android.support\support-fragment\24.2.1\jars\libs\internal_impl-24.2.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="5f64d657e838e8375135c0f6057a7ff8fab6a50e">
+        <dex dex="D:\Project\NyaMehv01\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-24.2.1_f688d4c752324190ed9f5390c38c0e47713cca67\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\Project\NyaMehv01\app\build\intermediates\exploded-aar\com.android.support\support-media-compat\24.2.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="09b462bbcb77650284bd6614f1a32f360ef369f8">
+        <dex dex="D:\Project\NyaMehv01\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-media-compat-24.2.1_a26ef900fb3767eaf92dd8a8fb98f2cdd6465bc6\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\Project\NyaMehv01\app\build\intermediates\exploded-aar\com.android.support\support-compat\24.2.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="0ecb4b595fa0f0f8018a149ace3ea6525624f94e">
+        <dex dex="D:\Project\NyaMehv01\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-compat-24.2.1_19757b7fd275e266886a581a5435e75c6cfbde80\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\Project\NyaMehv01\app\build\intermediates\exploded-aar\com.android.support\support-compat\24.2.1\jars\libs\internal_impl-24.2.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="7e4389bd133359a2ff88623ff1e4ff93d6e6f780">
+        <dex dex="D:\Project\NyaMehv01\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-24.2.1_7e477eb789bebd097ef120606db474ae6f88c683\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\Project\NyaMehv01\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="8bb7ed7e2975fca56cf35545c5fe93a4315f6c6f">
+        <dex dex="D:\Project\NyaMehv01\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_e2e3720b68c06a897a66a5b0c978868afccc0ba2\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\Project\NyaMeh\app\build\intermediates\exploded-aar\com.android.support\support-v4\24.2.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="D:\Project\NyaMeh\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-v4-24.2.1_e8f6bb564644719163b9c345cd5e2d3a47f77565\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\Project\NyaMeh\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\24.2.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="94bc1dfb84dcc8b6f6f8f7cc726d7b2dd39c1574">
+        <dex dex="D:\Project\NyaMeh\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-animated-vector-drawable-24.2.1_3ef7fd60e1e5be8ead9b280cb3a51d105a654871\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Dell\.gradle\caches\modules-2\files-2.1\com.google.zxing\core\3.2.0\e019d15a13a9786f881141d2df6654b8510bce8b\core-3.2.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="e019d15a13a9786f881141d2df6654b8510bce8b">
+        <dex dex="D:\Project\NyaMeh\app\build\intermediates\transforms\dex\debug\folders\1000\10\core-3.2.0_82cae3501175e45c19326a5cde9c1328fe961262\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\Project\NyaMeh\app\build\intermediates\exploded-aar\com.android.support.constraint\constraint-layout\1.0.0-alpha9\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="f2b64f6a762f61a2379d6a79af03e2ee56eefe0b">
+        <dex dex="D:\Project\NyaMeh\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support.constraint-constraint-layout-1.0.0-alpha9_7da282df83170e4b53fb34686a6755009c5a0788\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\Project\NyaMehv01\app\build\intermediates\exploded-aar\com.android.support.constraint\constraint-layout\1.0.0-alpha9\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="f2b64f6a762f61a2379d6a79af03e2ee56eefe0b">
+        <dex dex="D:\Project\NyaMehv01\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support.constraint-constraint-layout-1.0.0-alpha9_fb981f1f5647588632bf202b0ccb8d468fd8cc34\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\Project\NyaMehv01\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\24.2.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="43b2dba6b5a0b14527961b75329d0b90025f15ea">
+        <dex dex="D:\Project\NyaMehv01\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-appcompat-v7-24.2.1_473fe853ad3e9eab34d2c02cc165f80e66558075\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\Project\NyaMehv01\app\build\intermediates\exploded-aar\com.android.support\support-media-compat\24.2.1\jars\libs\internal_impl-24.2.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="fbf8da429efd5ad21e02e3e5ecaa1efc4167878d">
+        <dex dex="D:\Project\NyaMehv01\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-24.2.1_f769ae136f3133f121584a231b73ec784ebac5fe\classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -309,48 +354,12 @@
     </item>
     <item
         is-multidex="true"
-        jar="D:\Project\NyaMeh\app\build\intermediates\exploded-aar\com.android.support\support-media-compat\24.2.1\jars\libs\internal_impl-24.2.1.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.3"
-        sha1="fbf8da429efd5ad21e02e3e5ecaa1efc4167878d">
-        <dex dex="D:\Project\NyaMeh\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-24.2.1_7f76c36563783d213610e608ff6d8c47dcacad31\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="D:\Project\NyaMehv01\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.3"
-        sha1="604e5d3042d1df76543bf0f37a642b4a1a629857">
-        <dex dex="D:\Project\NyaMehv01\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_1cfadc83149beaf7807f6687561e1155bcdd362a\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
         jar="D:\Project\NyaMeh\app\build\intermediates\exploded-aar\com.android.support\support-compat\24.2.1\jars\classes.jar"
         jumboMode="true"
         optimize="true"
         revision="24.0.3"
         sha1="0ecb4b595fa0f0f8018a149ace3ea6525624f94e">
         <dex dex="D:\Project\NyaMeh\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-compat-24.2.1_f76f6c2635b92f64fe9ad3dfb4a0cc57446275c2\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="D:\Project\NyaMeh\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\24.2.1\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.3"
-        sha1="43b2dba6b5a0b14527961b75329d0b90025f15ea">
-        <dex dex="D:\Project\NyaMeh\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-appcompat-v7-24.2.1_ed2b16cc407771c6f63f827ccb2acea45801991c\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="D:\Project\NyaMehv01\app\build\intermediates\exploded-aar\com.journeyapps\zxing-android-embedded\3.0.2\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.3"
-        sha1="744a4b394a9a7db8a4c4680836d8544802a9cd64">
-        <dex dex="D:\Project\NyaMehv01\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.journeyapps-zxing-android-embedded-3.0.2_5c4b7917ef1b0dbcd9d6332bc92125bef4922c75\classes.dex" />
     </item>
 
 </items>
