@@ -20,7 +20,7 @@ public final class R {
 		public static final int layout_constraintGuide_end = 0x7f01000c;
 		public static final int layout_constraintGuide_percent = 0x7f01000d;
 		public static final int layout_constraintHorizontal_bias = 0x7f01000e;
-		public static final int layout_constraintHorizontal_chainPacked = 0x7f01000f;
+		public static final int layout_constraintHorizontal_chainStyle = 0x7f01000f;
 		public static final int layout_constraintHorizontal_weight = 0x7f010010;
 		public static final int layout_constraintLeft_creator = 0x7f010011;
 		public static final int layout_constraintLeft_toLeftOf = 0x7f010012;
@@ -34,7 +34,7 @@ public final class R {
 		public static final int layout_constraintTop_toBottomOf = 0x7f01001a;
 		public static final int layout_constraintTop_toTopOf = 0x7f01001b;
 		public static final int layout_constraintVertical_bias = 0x7f01001c;
-		public static final int layout_constraintVertical_chainPacked = 0x7f01001d;
+		public static final int layout_constraintVertical_chainStyle = 0x7f01001d;
 		public static final int layout_constraintVertical_weight = 0x7f01001e;
 		public static final int layout_editor_absoluteX = 0x7f01001f;
 		public static final int layout_editor_absoluteY = 0x7f010020;
@@ -46,7 +46,10 @@ public final class R {
 		public static final int layout_goneMarginTop = 0x7f010026;
 	}
 	public static final class id {
+		public static final int packed = 0x7f0c0012;
 		public static final int parent = 0x7f0c0011;
+		public static final int spread = 0x7f0c0013;
+		public static final int spread_inside = 0x7f0c0014;
 	}
 	public static final class styleable {
 		public static final int[] ConstraintLayout_Layout = { 0x010100c4, 0x7f010003, 0x7f010004, 0x7f010005, 0x7f010006, 0x7f010007, 0x7f010008, 0x7f010009, 0x7f01000a, 0x7f01000b, 0x7f01000c, 0x7f01000d, 0x7f01000e, 0x7f01000f, 0x7f010010, 0x7f010011, 0x7f010012, 0x7f010013, 0x7f010014, 0x7f010015, 0x7f010016, 0x7f010017, 0x7f010018, 0x7f010019, 0x7f01001a, 0x7f01001b, 0x7f01001c, 0x7f01001d, 0x7f01001e, 0x7f01001f, 0x7f010020, 0x7f010021, 0x7f010022, 0x7f010023, 0x7f010024, 0x7f010025, 0x7f010026 };
@@ -63,7 +66,7 @@ public final class R {
 		public static final int ConstraintLayout_Layout_layout_constraintGuide_end = 10;
 		public static final int ConstraintLayout_Layout_layout_constraintGuide_percent = 11;
 		public static final int ConstraintLayout_Layout_layout_constraintHorizontal_bias = 12;
-		public static final int ConstraintLayout_Layout_layout_constraintHorizontal_chainPacked = 13;
+		public static final int ConstraintLayout_Layout_layout_constraintHorizontal_chainStyle = 13;
 		public static final int ConstraintLayout_Layout_layout_constraintHorizontal_weight = 14;
 		public static final int ConstraintLayout_Layout_layout_constraintLeft_creator = 15;
 		public static final int ConstraintLayout_Layout_layout_constraintLeft_toLeftOf = 16;
@@ -77,7 +80,7 @@ public final class R {
 		public static final int ConstraintLayout_Layout_layout_constraintTop_toBottomOf = 24;
 		public static final int ConstraintLayout_Layout_layout_constraintTop_toTopOf = 25;
 		public static final int ConstraintLayout_Layout_layout_constraintVertical_bias = 26;
-		public static final int ConstraintLayout_Layout_layout_constraintVertical_chainPacked = 27;
+		public static final int ConstraintLayout_Layout_layout_constraintVertical_chainStyle = 27;
 		public static final int ConstraintLayout_Layout_layout_constraintVertical_weight = 28;
 		public static final int ConstraintLayout_Layout_layout_editor_absoluteX = 29;
 		public static final int ConstraintLayout_Layout_layout_editor_absoluteY = 30;
@@ -111,7 +114,7 @@ public final class R {
 		public static final int ConstraintSet_layout_constraintGuide_end = 20;
 		public static final int ConstraintSet_layout_constraintGuide_percent = 21;
 		public static final int ConstraintSet_layout_constraintHorizontal_bias = 22;
-		public static final int ConstraintSet_layout_constraintHorizontal_chainPacked = 23;
+		public static final int ConstraintSet_layout_constraintHorizontal_chainStyle = 23;
 		public static final int ConstraintSet_layout_constraintHorizontal_weight = 24;
 		public static final int ConstraintSet_layout_constraintLeft_creator = 25;
 		public static final int ConstraintSet_layout_constraintLeft_toLeftOf = 26;
@@ -125,7 +128,7 @@ public final class R {
 		public static final int ConstraintSet_layout_constraintTop_toBottomOf = 34;
 		public static final int ConstraintSet_layout_constraintTop_toTopOf = 35;
 		public static final int ConstraintSet_layout_constraintVertical_bias = 36;
-		public static final int ConstraintSet_layout_constraintVertical_chainPacked = 37;
+		public static final int ConstraintSet_layout_constraintVertical_chainStyle = 37;
 		public static final int ConstraintSet_layout_constraintVertical_weight = 38;
 		public static final int ConstraintSet_layout_editor_absoluteX = 39;
 		public static final int ConstraintSet_layout_editor_absoluteY = 40;

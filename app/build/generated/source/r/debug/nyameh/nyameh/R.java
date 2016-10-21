@@ -876,14 +876,18 @@ theme attribute (in the form
 containing a value of this type.
          */
         public static final int layout_constraintHorizontal_bias=0x7f01000e;
-        /** <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
-<p>This may also be a reference to a resource (in the form
-"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
-theme attribute (in the form
-"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
-containing a value of this type.
+        /** <p>Must be one of the following constant values.</p>
+<table>
+<colgroup align="left" />
+<colgroup align="left" />
+<colgroup align="left" />
+<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+<tr><td><code>spread</code></td><td>0</td><td></td></tr>
+<tr><td><code>spread_inside</code></td><td>1</td><td></td></tr>
+<tr><td><code>packed</code></td><td>2</td><td></td></tr>
+</table>
          */
-        public static final int layout_constraintHorizontal_chainPacked=0x7f01000f;
+        public static final int layout_constraintHorizontal_chainStyle=0x7f01000f;
         /** <p>Must be a floating point value, such as "<code>1.2</code>".
 <p>This may also be a reference to a resource (in the form
 "<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
@@ -1020,14 +1024,18 @@ theme attribute (in the form
 containing a value of this type.
          */
         public static final int layout_constraintVertical_bias=0x7f01001c;
-        /** <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
-<p>This may also be a reference to a resource (in the form
-"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
-theme attribute (in the form
-"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
-containing a value of this type.
+        /** <p>Must be one of the following constant values.</p>
+<table>
+<colgroup align="left" />
+<colgroup align="left" />
+<colgroup align="left" />
+<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+<tr><td><code>spread</code></td><td>0</td><td></td></tr>
+<tr><td><code>spread_inside</code></td><td>1</td><td></td></tr>
+<tr><td><code>packed</code></td><td>2</td><td></td></tr>
+</table>
          */
-        public static final int layout_constraintVertical_chainPacked=0x7f01001d;
+        public static final int layout_constraintVertical_chainStyle=0x7f01001d;
         /** <p>Must be a floating point value, such as "<code>1.2</code>".
 <p>This may also be a reference to a resource (in the form
 "<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
@@ -2232,117 +2240,127 @@ containing a value of this type.
         public static final int abc_textfield_search_default_mtrl_alpha=0x7f020050;
         public static final int abc_textfield_search_material=0x7f020051;
         public static final int abc_vector_test=0x7f020052;
-        public static final int notification_template_icon_bg=0x7f020053;
+        public static final int bg720_1280px=0x7f020053;
+        public static final int bt_map=0x7f020054;
+        public static final int bt_scan=0x7f020055;
+        public static final int button_map=0x7f020056;
+        public static final int button_map_pressed=0x7f020057;
+        public static final int button_scan=0x7f020058;
+        public static final int button_scan_pressed=0x7f020059;
+        public static final int notification_template_icon_bg=0x7f02005a;
     }
     public static final class id {
-        public static final int action0=0x7f0c0064;
-        public static final int action_bar=0x7f0c0051;
+        public static final int action0=0x7f0c0067;
+        public static final int action_bar=0x7f0c0054;
         public static final int action_bar_activity_content=0x7f0c0000;
-        public static final int action_bar_container=0x7f0c0050;
-        public static final int action_bar_root=0x7f0c004c;
+        public static final int action_bar_container=0x7f0c0053;
+        public static final int action_bar_root=0x7f0c004f;
         public static final int action_bar_spinner=0x7f0c0001;
-        public static final int action_bar_subtitle=0x7f0c0031;
-        public static final int action_bar_title=0x7f0c0030;
-        public static final int action_context_bar=0x7f0c0052;
-        public static final int action_divider=0x7f0c0068;
+        public static final int action_bar_subtitle=0x7f0c0034;
+        public static final int action_bar_title=0x7f0c0033;
+        public static final int action_context_bar=0x7f0c0055;
+        public static final int action_divider=0x7f0c006b;
         public static final int action_menu_divider=0x7f0c0002;
         public static final int action_menu_presenter=0x7f0c0003;
-        public static final int action_mode_bar=0x7f0c004e;
-        public static final int action_mode_bar_stub=0x7f0c004d;
-        public static final int action_mode_close_button=0x7f0c0032;
-        public static final int activity_chooser_view_content=0x7f0c0033;
-        public static final int activity_scan_qrcode=0x7f0c0062;
-        public static final int add=0x7f0c001c;
-        public static final int alertTitle=0x7f0c003f;
-        public static final int always=0x7f0c0026;
-        public static final int beginning=0x7f0c0023;
-        public static final int bottom=0x7f0c002b;
-        public static final int bt_map=0x7f0c0060;
-        public static final int buttonPanel=0x7f0c003a;
-        public static final int cancel_action=0x7f0c0065;
-        public static final int centerCrop=0x7f0c002d;
-        public static final int checkbox=0x7f0c0048;
-        public static final int chronometer=0x7f0c006b;
-        public static final int collapseActionView=0x7f0c0027;
-        public static final int contentPanel=0x7f0c0040;
-        public static final int custom=0x7f0c0046;
-        public static final int customPanel=0x7f0c0045;
-        public static final int decor_content_parent=0x7f0c004f;
-        public static final int default_activity_button=0x7f0c0036;
-        public static final int disableHome=0x7f0c0015;
-        public static final int edit_query=0x7f0c0053;
-        public static final int end=0x7f0c0024;
-        public static final int end_padder=0x7f0c0070;
-        public static final int expand_activities_button=0x7f0c0034;
-        public static final int expanded_menu=0x7f0c0047;
-        public static final int fitCenter=0x7f0c002e;
-        public static final int fitXY=0x7f0c002f;
+        public static final int action_mode_bar=0x7f0c0051;
+        public static final int action_mode_bar_stub=0x7f0c0050;
+        public static final int action_mode_close_button=0x7f0c0035;
+        public static final int activity_chooser_view_content=0x7f0c0036;
+        public static final int add=0x7f0c001f;
+        public static final int alertTitle=0x7f0c0042;
+        public static final int always=0x7f0c0029;
+        public static final int beginning=0x7f0c0026;
+        public static final int bottom=0x7f0c002e;
+        public static final int bt_map=0x7f0c0064;
+        public static final int bt_scan=0x7f0c0065;
+        public static final int buttonPanel=0x7f0c003d;
+        public static final int cancel_action=0x7f0c0068;
+        public static final int centerCrop=0x7f0c0030;
+        public static final int checkbox=0x7f0c004b;
+        public static final int chronometer=0x7f0c006e;
+        public static final int collapseActionView=0x7f0c002a;
+        public static final int contentPanel=0x7f0c0043;
+        public static final int custom=0x7f0c0049;
+        public static final int customPanel=0x7f0c0048;
+        public static final int decor_content_parent=0x7f0c0052;
+        public static final int default_activity_button=0x7f0c0039;
+        public static final int disableHome=0x7f0c0018;
+        public static final int edit_query=0x7f0c0056;
+        public static final int end=0x7f0c0027;
+        public static final int end_padder=0x7f0c0073;
+        public static final int expand_activities_button=0x7f0c0037;
+        public static final int expanded_menu=0x7f0c004a;
+        public static final int fitCenter=0x7f0c0031;
+        public static final int fitXY=0x7f0c0032;
         public static final int home=0x7f0c0004;
-        public static final int homeAsUp=0x7f0c0016;
-        public static final int icon=0x7f0c0038;
-        public static final int ifRoom=0x7f0c0028;
-        public static final int image=0x7f0c0035;
-        public static final int info=0x7f0c006f;
-        public static final int line1=0x7f0c0069;
-        public static final int line3=0x7f0c006d;
-        public static final int listMode=0x7f0c0012;
-        public static final int list_item=0x7f0c0037;
-        public static final int media_actions=0x7f0c0067;
-        public static final int middle=0x7f0c0025;
-        public static final int multiply=0x7f0c001d;
-        public static final int never=0x7f0c0029;
-        public static final int none=0x7f0c0017;
-        public static final int normal=0x7f0c0013;
+        public static final int homeAsUp=0x7f0c0019;
+        public static final int icon=0x7f0c003b;
+        public static final int ifRoom=0x7f0c002b;
+        public static final int image=0x7f0c0038;
+        public static final int info=0x7f0c0072;
+        public static final int line1=0x7f0c006c;
+        public static final int line3=0x7f0c0070;
+        public static final int listMode=0x7f0c0015;
+        public static final int list_item=0x7f0c003a;
+        public static final int media_actions=0x7f0c006a;
+        public static final int middle=0x7f0c0028;
+        public static final int multiply=0x7f0c0020;
+        public static final int never=0x7f0c002c;
+        public static final int none=0x7f0c001a;
+        public static final int normal=0x7f0c0016;
+        public static final int packed=0x7f0c0012;
         public static final int parent=0x7f0c0011;
-        public static final int parentPanel=0x7f0c003c;
+        public static final int parentPanel=0x7f0c003f;
         public static final int progress_circular=0x7f0c0005;
         public static final int progress_horizontal=0x7f0c0006;
-        public static final int radio=0x7f0c004a;
-        public static final int scanResultView=0x7f0c0063;
-        public static final int screen=0x7f0c001e;
-        public static final int scrollIndicatorDown=0x7f0c0044;
-        public static final int scrollIndicatorUp=0x7f0c0041;
-        public static final int scrollView=0x7f0c0042;
-        public static final int search_badge=0x7f0c0055;
-        public static final int search_bar=0x7f0c0054;
-        public static final int search_button=0x7f0c0056;
-        public static final int search_close_btn=0x7f0c005b;
-        public static final int search_edit_frame=0x7f0c0057;
-        public static final int search_go_btn=0x7f0c005d;
-        public static final int search_mag_icon=0x7f0c0058;
-        public static final int search_plate=0x7f0c0059;
-        public static final int search_src_text=0x7f0c005a;
-        public static final int search_voice_btn=0x7f0c005e;
-        public static final int select_dialog_listview=0x7f0c005f;
-        public static final int shortcut=0x7f0c0049;
-        public static final int showCustom=0x7f0c0018;
-        public static final int showHome=0x7f0c0019;
-        public static final int showTitle=0x7f0c001a;
-        public static final int spacer=0x7f0c003b;
+        public static final int radio=0x7f0c004d;
+        public static final int scanResultView=0x7f0c0066;
+        public static final int screen=0x7f0c0021;
+        public static final int scrollIndicatorDown=0x7f0c0047;
+        public static final int scrollIndicatorUp=0x7f0c0044;
+        public static final int scrollView=0x7f0c0045;
+        public static final int search_badge=0x7f0c0058;
+        public static final int search_bar=0x7f0c0057;
+        public static final int search_button=0x7f0c0059;
+        public static final int search_close_btn=0x7f0c005e;
+        public static final int search_edit_frame=0x7f0c005a;
+        public static final int search_go_btn=0x7f0c0060;
+        public static final int search_mag_icon=0x7f0c005b;
+        public static final int search_plate=0x7f0c005c;
+        public static final int search_src_text=0x7f0c005d;
+        public static final int search_voice_btn=0x7f0c0061;
+        public static final int select_dialog_listview=0x7f0c0062;
+        public static final int shortcut=0x7f0c004c;
+        public static final int showCustom=0x7f0c001b;
+        public static final int showHome=0x7f0c001c;
+        public static final int showTitle=0x7f0c001d;
+        public static final int spacer=0x7f0c003e;
         public static final int split_action_bar=0x7f0c0007;
-        public static final int src_atop=0x7f0c001f;
-        public static final int src_in=0x7f0c0020;
-        public static final int src_over=0x7f0c0021;
-        public static final int status_bar_latest_event_content=0x7f0c0066;
-        public static final int submenuarrow=0x7f0c004b;
-        public static final int submit_area=0x7f0c005c;
-        public static final int tabMode=0x7f0c0014;
-        public static final int text=0x7f0c006e;
-        public static final int text2=0x7f0c006c;
-        public static final int textSpacerNoButtons=0x7f0c0043;
-        public static final int textView=0x7f0c0061;
-        public static final int time=0x7f0c006a;
-        public static final int title=0x7f0c0039;
-        public static final int title_template=0x7f0c003e;
-        public static final int top=0x7f0c002c;
-        public static final int topPanel=0x7f0c003d;
+        public static final int spread=0x7f0c0013;
+        public static final int spread_inside=0x7f0c0014;
+        public static final int src_atop=0x7f0c0022;
+        public static final int src_in=0x7f0c0023;
+        public static final int src_over=0x7f0c0024;
+        public static final int status_bar_latest_event_content=0x7f0c0069;
+        public static final int submenuarrow=0x7f0c004e;
+        public static final int submit_area=0x7f0c005f;
+        public static final int tabMode=0x7f0c0017;
+        public static final int text=0x7f0c0071;
+        public static final int text2=0x7f0c006f;
+        public static final int textSpacerNoButtons=0x7f0c0046;
+        public static final int time=0x7f0c006d;
+        public static final int title=0x7f0c003c;
+        public static final int title2=0x7f0c0063;
+        public static final int title_template=0x7f0c0041;
+        public static final int top=0x7f0c002f;
+        public static final int topPanel=0x7f0c0040;
         public static final int up=0x7f0c0008;
-        public static final int useLogo=0x7f0c001b;
-        public static final int withText=0x7f0c002a;
-        public static final int wrap_content=0x7f0c0022;
+        public static final int useLogo=0x7f0c001e;
+        public static final int withText=0x7f0c002d;
+        public static final int wrap_content=0x7f0c0025;
         public static final int zxing_back_button=0x7f0c0009;
-        public static final int zxing_barcode_scanner=0x7f0c0074;
-        public static final int zxing_barcode_surface=0x7f0c0071;
+        public static final int zxing_barcode_scanner=0x7f0c0077;
+        public static final int zxing_barcode_surface=0x7f0c0074;
         public static final int zxing_camera_error=0x7f0c000a;
         public static final int zxing_decode=0x7f0c000b;
         public static final int zxing_decode_failed=0x7f0c000c;
@@ -2350,8 +2368,8 @@ containing a value of this type.
         public static final int zxing_possible_result_points=0x7f0c000e;
         public static final int zxing_preview_failed=0x7f0c000f;
         public static final int zxing_prewiew_size_ready=0x7f0c0010;
-        public static final int zxing_status_view=0x7f0c0073;
-        public static final int zxing_viewfinder_view=0x7f0c0072;
+        public static final int zxing_status_view=0x7f0c0076;
+        public static final int zxing_viewfinder_view=0x7f0c0075;
     }
     public static final class integer {
         public static final int abc_config_activityDefaultDur=0x7f0d0000;
@@ -2442,9 +2460,6 @@ containing a value of this type.
         public static final int abc_shareactionprovider_share_with_application=0x7f070011;
         public static final int abc_toolbar_collapse_description=0x7f070012;
         public static final int app_name=0x7f070025;
-        public static final int map=0x7f070026;
-        public static final int navigation_system_qr_code=0x7f070027;
-        public static final int scan=0x7f070028;
         public static final int search_menu_title=0x7f070013;
         public static final int status_bar_notification_info_overflow=0x7f070014;
         public static final int zxing_app_name=0x7f070015;
@@ -5490,7 +5505,7 @@ containing a value of this type.
            <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintGuide_end nyameh.nyameh:layout_constraintGuide_end}</code></td><td></td></tr>
            <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintGuide_percent nyameh.nyameh:layout_constraintGuide_percent}</code></td><td></td></tr>
            <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintHorizontal_bias nyameh.nyameh:layout_constraintHorizontal_bias}</code></td><td></td></tr>
-           <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintHorizontal_chainPacked nyameh.nyameh:layout_constraintHorizontal_chainPacked}</code></td><td></td></tr>
+           <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintHorizontal_chainStyle nyameh.nyameh:layout_constraintHorizontal_chainStyle}</code></td><td></td></tr>
            <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintHorizontal_weight nyameh.nyameh:layout_constraintHorizontal_weight}</code></td><td></td></tr>
            <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintLeft_creator nyameh.nyameh:layout_constraintLeft_creator}</code></td><td></td></tr>
            <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintLeft_toLeftOf nyameh.nyameh:layout_constraintLeft_toLeftOf}</code></td><td></td></tr>
@@ -5504,7 +5519,7 @@ containing a value of this type.
            <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintTop_toBottomOf nyameh.nyameh:layout_constraintTop_toBottomOf}</code></td><td></td></tr>
            <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintTop_toTopOf nyameh.nyameh:layout_constraintTop_toTopOf}</code></td><td></td></tr>
            <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintVertical_bias nyameh.nyameh:layout_constraintVertical_bias}</code></td><td></td></tr>
-           <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintVertical_chainPacked nyameh.nyameh:layout_constraintVertical_chainPacked}</code></td><td></td></tr>
+           <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintVertical_chainStyle nyameh.nyameh:layout_constraintVertical_chainStyle}</code></td><td></td></tr>
            <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintVertical_weight nyameh.nyameh:layout_constraintVertical_weight}</code></td><td></td></tr>
            <tr><td><code>{@link #ConstraintLayout_Layout_layout_editor_absoluteX nyameh.nyameh:layout_editor_absoluteX}</code></td><td></td></tr>
            <tr><td><code>{@link #ConstraintLayout_Layout_layout_editor_absoluteY nyameh.nyameh:layout_editor_absoluteY}</code></td><td></td></tr>
@@ -5528,7 +5543,7 @@ containing a value of this type.
            @see #ConstraintLayout_Layout_layout_constraintGuide_end
            @see #ConstraintLayout_Layout_layout_constraintGuide_percent
            @see #ConstraintLayout_Layout_layout_constraintHorizontal_bias
-           @see #ConstraintLayout_Layout_layout_constraintHorizontal_chainPacked
+           @see #ConstraintLayout_Layout_layout_constraintHorizontal_chainStyle
            @see #ConstraintLayout_Layout_layout_constraintHorizontal_weight
            @see #ConstraintLayout_Layout_layout_constraintLeft_creator
            @see #ConstraintLayout_Layout_layout_constraintLeft_toLeftOf
@@ -5542,7 +5557,7 @@ containing a value of this type.
            @see #ConstraintLayout_Layout_layout_constraintTop_toBottomOf
            @see #ConstraintLayout_Layout_layout_constraintTop_toTopOf
            @see #ConstraintLayout_Layout_layout_constraintVertical_bias
-           @see #ConstraintLayout_Layout_layout_constraintVertical_chainPacked
+           @see #ConstraintLayout_Layout_layout_constraintVertical_chainStyle
            @see #ConstraintLayout_Layout_layout_constraintVertical_weight
            @see #ConstraintLayout_Layout_layout_editor_absoluteX
            @see #ConstraintLayout_Layout_layout_editor_absoluteY
@@ -5764,19 +5779,23 @@ containing a value of this type.
         */
         public static final int ConstraintLayout_Layout_layout_constraintHorizontal_bias = 12;
         /**
-          <p>This symbol is the offset where the {@link nyameh.nyameh.R.attr#layout_constraintHorizontal_chainPacked}
+          <p>This symbol is the offset where the {@link nyameh.nyameh.R.attr#layout_constraintHorizontal_chainStyle}
           attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
 
 
-          <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
-<p>This may also be a reference to a resource (in the form
-"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
-theme attribute (in the form
-"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
-containing a value of this type.
-          @attr name nyameh.nyameh:layout_constraintHorizontal_chainPacked
+          <p>Must be one of the following constant values.</p>
+<table>
+<colgroup align="left" />
+<colgroup align="left" />
+<colgroup align="left" />
+<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+<tr><td><code>spread</code></td><td>0</td><td></td></tr>
+<tr><td><code>spread_inside</code></td><td>1</td><td></td></tr>
+<tr><td><code>packed</code></td><td>2</td><td></td></tr>
+</table>
+          @attr name nyameh.nyameh:layout_constraintHorizontal_chainStyle
         */
-        public static final int ConstraintLayout_Layout_layout_constraintHorizontal_chainPacked = 13;
+        public static final int ConstraintLayout_Layout_layout_constraintHorizontal_chainStyle = 13;
         /**
           <p>This symbol is the offset where the {@link nyameh.nyameh.R.attr#layout_constraintHorizontal_weight}
           attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
@@ -5992,19 +6011,23 @@ containing a value of this type.
         */
         public static final int ConstraintLayout_Layout_layout_constraintVertical_bias = 26;
         /**
-          <p>This symbol is the offset where the {@link nyameh.nyameh.R.attr#layout_constraintVertical_chainPacked}
+          <p>This symbol is the offset where the {@link nyameh.nyameh.R.attr#layout_constraintVertical_chainStyle}
           attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
 
 
-          <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
-<p>This may also be a reference to a resource (in the form
-"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
-theme attribute (in the form
-"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
-containing a value of this type.
-          @attr name nyameh.nyameh:layout_constraintVertical_chainPacked
+          <p>Must be one of the following constant values.</p>
+<table>
+<colgroup align="left" />
+<colgroup align="left" />
+<colgroup align="left" />
+<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+<tr><td><code>spread</code></td><td>0</td><td></td></tr>
+<tr><td><code>spread_inside</code></td><td>1</td><td></td></tr>
+<tr><td><code>packed</code></td><td>2</td><td></td></tr>
+</table>
+          @attr name nyameh.nyameh:layout_constraintVertical_chainStyle
         */
-        public static final int ConstraintLayout_Layout_layout_constraintVertical_chainPacked = 27;
+        public static final int ConstraintLayout_Layout_layout_constraintVertical_chainStyle = 27;
         /**
           <p>This symbol is the offset where the {@link nyameh.nyameh.R.attr#layout_constraintVertical_weight}
           attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
@@ -6176,7 +6199,7 @@ containing a value of this type.
            <tr><td><code>{@link #ConstraintSet_layout_constraintGuide_end nyameh.nyameh:layout_constraintGuide_end}</code></td><td></td></tr>
            <tr><td><code>{@link #ConstraintSet_layout_constraintGuide_percent nyameh.nyameh:layout_constraintGuide_percent}</code></td><td></td></tr>
            <tr><td><code>{@link #ConstraintSet_layout_constraintHorizontal_bias nyameh.nyameh:layout_constraintHorizontal_bias}</code></td><td></td></tr>
-           <tr><td><code>{@link #ConstraintSet_layout_constraintHorizontal_chainPacked nyameh.nyameh:layout_constraintHorizontal_chainPacked}</code></td><td></td></tr>
+           <tr><td><code>{@link #ConstraintSet_layout_constraintHorizontal_chainStyle nyameh.nyameh:layout_constraintHorizontal_chainStyle}</code></td><td></td></tr>
            <tr><td><code>{@link #ConstraintSet_layout_constraintHorizontal_weight nyameh.nyameh:layout_constraintHorizontal_weight}</code></td><td></td></tr>
            <tr><td><code>{@link #ConstraintSet_layout_constraintLeft_creator nyameh.nyameh:layout_constraintLeft_creator}</code></td><td></td></tr>
            <tr><td><code>{@link #ConstraintSet_layout_constraintLeft_toLeftOf nyameh.nyameh:layout_constraintLeft_toLeftOf}</code></td><td></td></tr>
@@ -6190,7 +6213,7 @@ containing a value of this type.
            <tr><td><code>{@link #ConstraintSet_layout_constraintTop_toBottomOf nyameh.nyameh:layout_constraintTop_toBottomOf}</code></td><td></td></tr>
            <tr><td><code>{@link #ConstraintSet_layout_constraintTop_toTopOf nyameh.nyameh:layout_constraintTop_toTopOf}</code></td><td></td></tr>
            <tr><td><code>{@link #ConstraintSet_layout_constraintVertical_bias nyameh.nyameh:layout_constraintVertical_bias}</code></td><td></td></tr>
-           <tr><td><code>{@link #ConstraintSet_layout_constraintVertical_chainPacked nyameh.nyameh:layout_constraintVertical_chainPacked}</code></td><td></td></tr>
+           <tr><td><code>{@link #ConstraintSet_layout_constraintVertical_chainStyle nyameh.nyameh:layout_constraintVertical_chainStyle}</code></td><td></td></tr>
            <tr><td><code>{@link #ConstraintSet_layout_constraintVertical_weight nyameh.nyameh:layout_constraintVertical_weight}</code></td><td></td></tr>
            <tr><td><code>{@link #ConstraintSet_layout_editor_absoluteX nyameh.nyameh:layout_editor_absoluteX}</code></td><td></td></tr>
            <tr><td><code>{@link #ConstraintSet_layout_editor_absoluteY nyameh.nyameh:layout_editor_absoluteY}</code></td><td></td></tr>
@@ -6224,7 +6247,7 @@ containing a value of this type.
            @see #ConstraintSet_layout_constraintGuide_end
            @see #ConstraintSet_layout_constraintGuide_percent
            @see #ConstraintSet_layout_constraintHorizontal_bias
-           @see #ConstraintSet_layout_constraintHorizontal_chainPacked
+           @see #ConstraintSet_layout_constraintHorizontal_chainStyle
            @see #ConstraintSet_layout_constraintHorizontal_weight
            @see #ConstraintSet_layout_constraintLeft_creator
            @see #ConstraintSet_layout_constraintLeft_toLeftOf
@@ -6238,7 +6261,7 @@ containing a value of this type.
            @see #ConstraintSet_layout_constraintTop_toBottomOf
            @see #ConstraintSet_layout_constraintTop_toTopOf
            @see #ConstraintSet_layout_constraintVertical_bias
-           @see #ConstraintSet_layout_constraintVertical_chainPacked
+           @see #ConstraintSet_layout_constraintVertical_chainStyle
            @see #ConstraintSet_layout_constraintVertical_weight
            @see #ConstraintSet_layout_editor_absoluteX
            @see #ConstraintSet_layout_editor_absoluteY
@@ -6522,19 +6545,23 @@ containing a value of this type.
         */
         public static final int ConstraintSet_layout_constraintHorizontal_bias = 22;
         /**
-          <p>This symbol is the offset where the {@link nyameh.nyameh.R.attr#layout_constraintHorizontal_chainPacked}
+          <p>This symbol is the offset where the {@link nyameh.nyameh.R.attr#layout_constraintHorizontal_chainStyle}
           attribute's value can be found in the {@link #ConstraintSet} array.
 
 
-          <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
-<p>This may also be a reference to a resource (in the form
-"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
-theme attribute (in the form
-"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
-containing a value of this type.
-          @attr name nyameh.nyameh:layout_constraintHorizontal_chainPacked
+          <p>Must be one of the following constant values.</p>
+<table>
+<colgroup align="left" />
+<colgroup align="left" />
+<colgroup align="left" />
+<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+<tr><td><code>spread</code></td><td>0</td><td></td></tr>
+<tr><td><code>spread_inside</code></td><td>1</td><td></td></tr>
+<tr><td><code>packed</code></td><td>2</td><td></td></tr>
+</table>
+          @attr name nyameh.nyameh:layout_constraintHorizontal_chainStyle
         */
-        public static final int ConstraintSet_layout_constraintHorizontal_chainPacked = 23;
+        public static final int ConstraintSet_layout_constraintHorizontal_chainStyle = 23;
         /**
           <p>This symbol is the offset where the {@link nyameh.nyameh.R.attr#layout_constraintHorizontal_weight}
           attribute's value can be found in the {@link #ConstraintSet} array.
@@ -6750,19 +6777,23 @@ containing a value of this type.
         */
         public static final int ConstraintSet_layout_constraintVertical_bias = 36;
         /**
-          <p>This symbol is the offset where the {@link nyameh.nyameh.R.attr#layout_constraintVertical_chainPacked}
+          <p>This symbol is the offset where the {@link nyameh.nyameh.R.attr#layout_constraintVertical_chainStyle}
           attribute's value can be found in the {@link #ConstraintSet} array.
 
 
-          <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
-<p>This may also be a reference to a resource (in the form
-"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
-theme attribute (in the form
-"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
-containing a value of this type.
-          @attr name nyameh.nyameh:layout_constraintVertical_chainPacked
+          <p>Must be one of the following constant values.</p>
+<table>
+<colgroup align="left" />
+<colgroup align="left" />
+<colgroup align="left" />
+<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+<tr><td><code>spread</code></td><td>0</td><td></td></tr>
+<tr><td><code>spread_inside</code></td><td>1</td><td></td></tr>
+<tr><td><code>packed</code></td><td>2</td><td></td></tr>
+</table>
+          @attr name nyameh.nyameh:layout_constraintVertical_chainStyle
         */
-        public static final int ConstraintSet_layout_constraintVertical_chainPacked = 37;
+        public static final int ConstraintSet_layout_constraintVertical_chainStyle = 37;
         /**
           <p>This symbol is the offset where the {@link nyameh.nyameh.R.attr#layout_constraintVertical_weight}
           attribute's value can be found in the {@link #ConstraintSet} array.

@@ -1,7 +1,4 @@
 <resources>
     <string name="app_name">NyaMeh</string>
 
-    <string name="navigation_system_qr_code">Navigation System QR Code</string>
-    <string name="scan">SCAN</string>
-    <string name="map">MAP</string>
 </resources>
