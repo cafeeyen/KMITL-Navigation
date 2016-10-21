@@ -2250,7 +2250,7 @@ containing a value of this type.
         public static final int notification_template_icon_bg=0x7f02005a;
     }
     public static final class id {
-        public static final int action0=0x7f0c0067;
+        public static final int action0=0x7f0c0068;
         public static final int action_bar=0x7f0c0054;
         public static final int action_bar_activity_content=0x7f0c0000;
         public static final int action_bar_container=0x7f0c0053;
@@ -2259,13 +2259,14 @@ containing a value of this type.
         public static final int action_bar_subtitle=0x7f0c0034;
         public static final int action_bar_title=0x7f0c0033;
         public static final int action_context_bar=0x7f0c0055;
-        public static final int action_divider=0x7f0c006b;
+        public static final int action_divider=0x7f0c006c;
         public static final int action_menu_divider=0x7f0c0002;
         public static final int action_menu_presenter=0x7f0c0003;
         public static final int action_mode_bar=0x7f0c0051;
         public static final int action_mode_bar_stub=0x7f0c0050;
         public static final int action_mode_close_button=0x7f0c0035;
         public static final int activity_chooser_view_content=0x7f0c0036;
+        public static final int activity_scan_qrcode=0x7f0c0066;
         public static final int add=0x7f0c001f;
         public static final int alertTitle=0x7f0c0042;
         public static final int always=0x7f0c0029;
@@ -2274,10 +2275,10 @@ containing a value of this type.
         public static final int bt_map=0x7f0c0064;
         public static final int bt_scan=0x7f0c0065;
         public static final int buttonPanel=0x7f0c003d;
-        public static final int cancel_action=0x7f0c0068;
+        public static final int cancel_action=0x7f0c0069;
         public static final int centerCrop=0x7f0c0030;
         public static final int checkbox=0x7f0c004b;
-        public static final int chronometer=0x7f0c006e;
+        public static final int chronometer=0x7f0c006f;
         public static final int collapseActionView=0x7f0c002a;
         public static final int contentPanel=0x7f0c0043;
         public static final int custom=0x7f0c0049;
@@ -2287,7 +2288,7 @@ containing a value of this type.
         public static final int disableHome=0x7f0c0018;
         public static final int edit_query=0x7f0c0056;
         public static final int end=0x7f0c0027;
-        public static final int end_padder=0x7f0c0073;
+        public static final int end_padder=0x7f0c0074;
         public static final int expand_activities_button=0x7f0c0037;
         public static final int expanded_menu=0x7f0c004a;
         public static final int fitCenter=0x7f0c0031;
@@ -2297,12 +2298,12 @@ containing a value of this type.
         public static final int icon=0x7f0c003b;
         public static final int ifRoom=0x7f0c002b;
         public static final int image=0x7f0c0038;
-        public static final int info=0x7f0c0072;
-        public static final int line1=0x7f0c006c;
-        public static final int line3=0x7f0c0070;
+        public static final int info=0x7f0c0073;
+        public static final int line1=0x7f0c006d;
+        public static final int line3=0x7f0c0071;
         public static final int listMode=0x7f0c0015;
         public static final int list_item=0x7f0c003a;
-        public static final int media_actions=0x7f0c006a;
+        public static final int media_actions=0x7f0c006b;
         public static final int middle=0x7f0c0028;
         public static final int multiply=0x7f0c0020;
         public static final int never=0x7f0c002c;
@@ -2314,7 +2315,7 @@ containing a value of this type.
         public static final int progress_circular=0x7f0c0005;
         public static final int progress_horizontal=0x7f0c0006;
         public static final int radio=0x7f0c004d;
-        public static final int scanResultView=0x7f0c0066;
+        public static final int scanResultView=0x7f0c0067;
         public static final int screen=0x7f0c0021;
         public static final int scrollIndicatorDown=0x7f0c0047;
         public static final int scrollIndicatorUp=0x7f0c0044;
@@ -2341,14 +2342,14 @@ containing a value of this type.
         public static final int src_atop=0x7f0c0022;
         public static final int src_in=0x7f0c0023;
         public static final int src_over=0x7f0c0024;
-        public static final int status_bar_latest_event_content=0x7f0c0069;
+        public static final int status_bar_latest_event_content=0x7f0c006a;
         public static final int submenuarrow=0x7f0c004e;
         public static final int submit_area=0x7f0c005f;
         public static final int tabMode=0x7f0c0017;
-        public static final int text=0x7f0c0071;
-        public static final int text2=0x7f0c006f;
+        public static final int text=0x7f0c0072;
+        public static final int text2=0x7f0c0070;
         public static final int textSpacerNoButtons=0x7f0c0046;
-        public static final int time=0x7f0c006d;
+        public static final int time=0x7f0c006e;
         public static final int title=0x7f0c003c;
         public static final int title2=0x7f0c0063;
         public static final int title_template=0x7f0c0041;
@@ -2359,8 +2360,8 @@ containing a value of this type.
         public static final int withText=0x7f0c002d;
         public static final int wrap_content=0x7f0c0025;
         public static final int zxing_back_button=0x7f0c0009;
-        public static final int zxing_barcode_scanner=0x7f0c0077;
-        public static final int zxing_barcode_surface=0x7f0c0074;
+        public static final int zxing_barcode_scanner=0x7f0c0078;
+        public static final int zxing_barcode_surface=0x7f0c0075;
         public static final int zxing_camera_error=0x7f0c000a;
         public static final int zxing_decode=0x7f0c000b;
         public static final int zxing_decode_failed=0x7f0c000c;
@@ -2368,8 +2369,8 @@ containing a value of this type.
         public static final int zxing_possible_result_points=0x7f0c000e;
         public static final int zxing_preview_failed=0x7f0c000f;
         public static final int zxing_prewiew_size_ready=0x7f0c0010;
-        public static final int zxing_status_view=0x7f0c0076;
-        public static final int zxing_viewfinder_view=0x7f0c0075;
+        public static final int zxing_status_view=0x7f0c0077;
+        public static final int zxing_viewfinder_view=0x7f0c0076;
     }
     public static final class integer {
         public static final int abc_config_activityDefaultDur=0x7f0d0000;
