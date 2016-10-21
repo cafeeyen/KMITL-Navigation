@@ -7,17 +7,14 @@
     <uses-sdk
         android:minSdkVersion="15"
         android:targetSdkVersion="24" />
-    //camera permission
-    <uses-permission android:name="android.permission.CAMERA" /> <!-- Don't require camera, as this requires a rear camera. This allows it to work on the Nexus 7 -->
-    <uses-feature
-        android:name="android.hardware.camera"
-        android:required="false" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <uses-permission android:name="android.permission.CAMERA" />
+
     <uses-feature
         android:name="android.hardware.camera.front"
-        android:required="false" /> <!-- TODO replace above two with next line after Android 4.2 -->
-    <!-- <uses-feature android:name="android.hardware.camera.any"/> -->
-    <uses-feature
-        android:name="android.hardware.camera.autofocus"
         android:required="false" />
     <uses-feature
         android:name="android.hardware.camera.flash"
@@ -28,11 +25,7 @@
     <uses-feature
         android:name="android.hardware.wifi"
         android:required="false" />
-    <!--
-    <uses-feature android:name="android.hardware.camera" />
-    <uses-feature android:name="android.hardware.camera.autofocus" />
-    <uses-permission android:name="android.permission.CAMERA" />
-    -->
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
