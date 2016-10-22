@@ -1,6 +1,7 @@
 package nyameh.nyameh;
 
 import android.app.Activity;
+import android.app.AlertDialog;
 import android.content.Intent;
 import android.graphics.Typeface;
 import android.os.Bundle;
@@ -9,11 +10,15 @@ import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.google.zxing.Result;
 import com.google.zxing.integration.android.IntentIntegrator;
 import com.google.zxing.integration.android.IntentResult;
 
-public class MainActivity extends Activity {
+import me.dm7.barcodescanner.zxing.ZXingScannerView;
+
+public class MainActivity extends Activity implements ZXingScannerView.ResultHandler {
     public final static String EXTRA_MESSAGE = "Nyameh.MESSAGE";
+    private ZXingScannerView mScannerView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState)
@@ -33,35 +38,34 @@ public class MainActivity extends Activity {
 
     public void toScanQRCode(View view)
     {
-        new IntentIntegrator(this).initiateScan();
+        mScannerView = new ZXingScannerView(this); // Programmatically initialize the scanner view
+        setContentView(mScannerView);
+        mScannerView.setResultHandler(this); // Register ourselves as a handler for scan results.
+        mScannerView.startCamera(); // Start camera
     }
 
-    public void onActivityResult(int requestCode, int resultCode, Intent intent)
+    @Override
+    public void handleResult(Result rawResult)
     {
-        IntentResult result = IntentIntegrator.parseActivityResult(requestCode, resultCode, intent);
-        if(result != null)
-        {
-            if(result.getContents() == null)
-            {
-                Toast.makeText(this, "Cancelled", Toast.LENGTH_LONG).show();
+        String result = rawResult.getText();
+        if(result != null){
+            if(QRCode.checkQRResult(result)){ //can pass to next page
+                Intent showText = new Intent(this, ScanQRCodeActivity.class);
+                showText.putExtra(EXTRA_MESSAGE, result);
+                startActivity(showText);
             }
-            else
-            {
-                if (QRCode.checkQRResult(result.getContents()))
-                {
-                    Intent showText = new Intent(this, ScanQRCodeActivity.class);
-                    showText.putExtra(EXTRA_MESSAGE, result.getContents());
-                    startActivity(showText);
-                }
-                else
-                {
-
-                }
+            else{ //pop up alert
+                AlertDialog.Builder builder = new AlertDialog.Builder(this);
+                builder.setTitle("Wrong QR Code");
+                builder.setMessage("Result of This code is \n" + result);
+                AlertDialog alert1 = builder.create();
+                alert1.show();
             }
         }
-        else
-        {
-            super.onActivityResult(requestCode, resultCode, intent);
-        }
+    }
+    @Override
+    public void onPause() {
+        super.onPause();
+        mScannerView.stopCamera(); // Stop camera on pause
     }
 }

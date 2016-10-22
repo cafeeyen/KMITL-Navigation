@@ -141,6 +141,9 @@
     <color name="switch_thumb_disabled_material_light">#ffbdbdbd</color>
     <color name="switch_thumb_normal_material_dark">#ffbdbdbd</color>
     <color name="switch_thumb_normal_material_light">#fff1f1f1</color>
+    <color name="viewfinder_border">#ffafed44</color>
+    <color name="viewfinder_laser">#ffcc0000</color>
+    <color name="viewfinder_mask">#60000000</color>
     <color name="zxing_custom_possible_result_points">#903A89CF</color>
     <color name="zxing_custom_result_view">#b0000000</color>
     <color name="zxing_custom_viewfinder_laser">#1976D2</color>
@@ -391,6 +394,8 @@
     <integer name="abc_config_activityShortDur">150</integer>
     <integer name="cancel_button_image_alpha">127</integer>
     <integer name="status_bar_notification_info_maxnum">999</integer>
+    <integer name="viewfinder_border_length">60</integer>
+    <integer name="viewfinder_border_width">4</integer>
     <string name="abc_action_bar_home_description">Navigate home</string>
     <string name="abc_action_bar_home_description_format">%1$s, %2$s</string>
     <string name="abc_action_bar_home_subtitle_description_format">%1$s, %2$s, %3$s</string>
