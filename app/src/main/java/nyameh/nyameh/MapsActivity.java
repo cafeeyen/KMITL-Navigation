@@ -97,7 +97,6 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
     @Override
     public void onLocationChanged(Location location) {}
 
-    //Override of android.location.LocationListener
     @Override
     public void onStatusChanged(String provider, int status, Bundle extras) {}
 

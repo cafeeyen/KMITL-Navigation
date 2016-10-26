@@ -395,29 +395,8 @@
                     "startColumn": 4,
                     "startOffset": 12634,
                     "endLine": 171,
-                    "endColumn": 8,
-                    "endOffset": 12755
-                },
-                "from": {
-                    "file": "E:\\IT\\SE\\NyaMeh\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-appinvite\\9.8.0\\res\\values-v11\\values.xml",
-                    "position": {
-                        "startLine": 4,
-                        "startColumn": 0,
-                        "startOffset": 172,
-                        "endLine": 5,
-                        "endColumn": 8,
-                        "endOffset": 293
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 172,
-                    "startColumn": 4,
-                    "startOffset": 12760,
-                    "endLine": 173,
                     "endColumn": 10,
-                    "endOffset": 12855
+                    "endOffset": 12729
                 },
                 "from": {
                     "file": "E:\\IT\\SE\\NyaMeh\\app\\build\\intermediates\\exploded-aar\\com.journeyapps\\zxing-android-embedded\\3.4.0\\res\\values-v11\\values-v11.xml",
