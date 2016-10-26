@@ -35,9 +35,9 @@ public class QRScanActivity extends AppCompatActivity implements ZXingScannerVie
         {
             if(QRScanActivity.checkQRResult(result))
             { //can pass to next page
-                Intent showText = new Intent(this, ScanQRCodeActivity.class);
-                showText.putExtra(EXTRA_MESSAGE, result);
-                startActivity(showText);
+                Intent intent = new Intent(this, MapsActivity.class);
+                MapsActivity.setTarget(result);
+                startActivity(intent);
             }
             else
             { //pop up alert
@@ -69,7 +69,8 @@ public class QRScanActivity extends AppCompatActivity implements ZXingScannerVie
         return false;
     }
 
-    private static double getTitude(String qrContent, Boolean isLatitude){
+    private static double getTitude(String qrContent, Boolean isLatitude)
+    {
         if(isLatitude)
         {
             try
