@@ -17,7 +17,7 @@ public class ScanQRCodeActivity extends AppCompatActivity {
         scanResultView = (TextView) findViewById(R.id.scanResultView);
 
         Intent qrintent = getIntent();
-        String scanResult = qrintent.getStringExtra(MainActivity.EXTRA_MESSAGE);
+        String scanResult = qrintent.getStringExtra(QRScanActivity.EXTRA_MESSAGE);
         scanResultView.setText(scanResult);
     }
 }

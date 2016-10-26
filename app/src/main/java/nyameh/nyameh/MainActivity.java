@@ -1,21 +1,14 @@
 package nyameh.nyameh;
 
 import android.app.Activity;
-import android.app.AlertDialog;
 import android.content.Intent;
 import android.graphics.Typeface;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
-import com.google.zxing.Result;
 
-import me.dm7.barcodescanner.zxing.ZXingScannerView;
-
-public class MainActivity extends Activity implements ZXingScannerView.ResultHandler
+public class MainActivity extends Activity
 {
-    public final static String EXTRA_MESSAGE = "Nyameh.MESSAGE";
-    private ZXingScannerView mScannerView;
-
     @Override
     protected void onCreate(Bundle savedInstanceState)
     {
@@ -32,41 +25,16 @@ public class MainActivity extends Activity implements ZXingScannerView.ResultHan
         title2.setTypeface(fontPspimpdeed);
     }
 
-    public void toScanQRCode(View view)
+    public void toQRScan(View view)
     {
-        mScannerView = new ZXingScannerView(this); // Programmatically initialize the scanner view
-        setContentView(mScannerView);
-        mScannerView.setResultHandler(this); // Register ourselves as a handler for scan results.
-        mScannerView.startCamera(); // Start camera
+        Intent intent = new Intent(this, QRScanActivity.class);
+        startActivity(intent);
     }
 
-    @Override
-    public void handleResult(Result rawResult)
+    public void toMaps(View view)
     {
-        String result = rawResult.getText();
-        if(result != null)
-        {
-            if(QRCode.checkQRResult(result))
-            { //can pass to next page
-                Intent showText = new Intent(this, ScanQRCodeActivity.class);
-                showText.putExtra(EXTRA_MESSAGE, result);
-                startActivity(showText);
-            }
-            else
-            { //pop up alert
-                AlertDialog.Builder builder = new AlertDialog.Builder(this);
-                builder.setTitle("Wrong QR Code");
-                builder.setMessage("Result of This code is \n" + result);
-                AlertDialog alert1 = builder.create();
-                alert1.show();
-                mScannerView.resumeCameraPreview(this);
-            }
-        }
+        Intent intent = new Intent(this, MapsActivity.class);
+        startActivity(intent);
     }
-    @Override
-    public void onPause()
-    {
-        super.onPause();
-        mScannerView.stopCamera(); // Stop camera on pause
-    }
+
 }
