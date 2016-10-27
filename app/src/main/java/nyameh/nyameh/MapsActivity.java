@@ -19,10 +19,10 @@ import com.google.android.gms.maps.model.BitmapDescriptorFactory;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.MarkerOptions;
 
-public class MapsActivity extends FragmentActivity implements OnMapReadyCallback, LocationListener
+public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
 {
-    private static LatLng targetLatLng;
-    private static MarkerOptions targetMarker;
+    private LatLng targetLatLng;
+    private MarkerOptions targetMarker;
     private GoogleMap mMap;
     private LatLng user = new LatLng(0, 0);
     private LocationManager locationManager;
@@ -54,6 +54,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         setContentView(R.layout.activity_maps);
         SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager().findFragmentById(R.id.map);
         mapFragment.getMapAsync(this);
+        targetLatLng = new LatLng(getIntent().getDoubleExtra("Lat", 0), getIntent().getDoubleExtra("Lng", 0));
         initializeLocationManager();
     }
 
@@ -67,7 +68,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
 
         mMap.setMyLocationEnabled(true);
         mMap.animateCamera(CameraUpdateFactory.zoomTo(17));
-        if(targetLatLng != null)
+        if(targetLatLng.latitude != 0 && targetLatLng.longitude != 0)
         {
             targetMarker = new MarkerOptions().position(targetLatLng).icon(BitmapDescriptorFactory.fromResource(R.drawable.sword50_50));
             mMap.addMarker(targetMarker);
@@ -85,24 +86,5 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
 
         locationManager.requestLocationUpdates(LocationManager.GPS_PROVIDER, 0, 0, locationListener);
         locationManager.requestLocationUpdates(LocationManager.NETWORK_PROVIDER, 0, 0, locationListener);
-        Location location = locationManager.getLastKnownLocation(locationProvider);
-        if(location != null && mMap != null) onLocationChanged(location);
     }
-
-    public static void setTarget(String position)
-    {
-        targetLatLng = new LatLng(Double.parseDouble(position.split(",")[0].substring(4)), Double.parseDouble(position.split(",")[1]));
-    }
-
-    @Override
-    public void onLocationChanged(Location location) {}
-
-    @Override
-    public void onStatusChanged(String provider, int status, Bundle extras) {}
-
-    @Override
-    public void onProviderEnabled(String provider) {}
-
-    @Override
-    public void onProviderDisabled(String provider) {}
 }

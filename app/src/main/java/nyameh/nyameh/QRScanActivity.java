@@ -35,7 +35,8 @@ public class QRScanActivity extends AppCompatActivity implements ZXingScannerVie
             if(QRScanActivity.checkQRResult(result))
             { //can pass to next page
                 Intent intent = new Intent(this, MapsActivity.class);
-                MapsActivity.setTarget(result);
+                intent.putExtra("Lat", Double.parseDouble(result.split(",")[0].substring(4)));
+                intent.putExtra("Lng", Double.parseDouble(result.split(",")[1]));
                 startActivity(intent);
             }
             else
