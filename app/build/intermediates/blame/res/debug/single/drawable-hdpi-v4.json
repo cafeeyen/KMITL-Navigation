@@ -28,12 +28,16 @@
         "source": "E:\\IT\\SE\\NyaMeh\\app\\build\\intermediates\\exploded-aar\\com.android.support\\mediarouter-v7\\22.0.0\\res\\drawable-hdpi-v4\\ic_media_route_off_mono_dark.png"
     },
     {
+        "merged": "E:\\IT\\SE\\NyaMeh\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\abc_textfield_default_mtrl_alpha.9.png",
+        "source": "E:\\IT\\SE\\NyaMeh\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\drawable-hdpi-v4\\abc_textfield_default_mtrl_alpha.9.png"
+    },
+    {
         "merged": "E:\\IT\\SE\\NyaMeh\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\abc_list_pressed_holo_light.9.png",
         "source": "E:\\IT\\SE\\NyaMeh\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\drawable-hdpi-v4\\abc_list_pressed_holo_light.9.png"
     },
     {
-        "merged": "E:\\IT\\SE\\NyaMeh\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\abc_textfield_default_mtrl_alpha.9.png",
-        "source": "E:\\IT\\SE\\NyaMeh\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\drawable-hdpi-v4\\abc_textfield_default_mtrl_alpha.9.png"
+        "merged": "E:\\IT\\SE\\NyaMeh\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\notification_bg_low_normal.9.png",
+        "source": "E:\\IT\\SE\\NyaMeh\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.0\\res\\drawable-hdpi-v4\\notification_bg_low_normal.9.png"
     },
     {
         "merged": "E:\\IT\\SE\\NyaMeh\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\abc_ic_star_black_48dp.png",
@@ -108,6 +112,10 @@
         "source": "E:\\IT\\SE\\NyaMeh\\app\\build\\intermediates\\exploded-aar\\com.android.support\\mediarouter-v7\\22.0.0\\res\\drawable-hdpi-v4\\ic_cast_light.png"
     },
     {
+        "merged": "E:\\IT\\SE\\NyaMeh\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\notification_bg_normal_pressed.9.png",
+        "source": "E:\\IT\\SE\\NyaMeh\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.0\\res\\drawable-hdpi-v4\\notification_bg_normal_pressed.9.png"
+    },
+    {
         "merged": "E:\\IT\\SE\\NyaMeh\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\abc_btn_switch_to_on_mtrl_00001.9.png",
         "source": "E:\\IT\\SE\\NyaMeh\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\drawable-hdpi-v4\\abc_btn_switch_to_on_mtrl_00001.9.png"
     },
@@ -138,6 +146,10 @@
     {
         "merged": "E:\\IT\\SE\\NyaMeh\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\abc_ic_star_black_16dp.png",
         "source": "E:\\IT\\SE\\NyaMeh\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\drawable-hdpi-v4\\abc_ic_star_black_16dp.png"
+    },
+    {
+        "merged": "E:\\IT\\SE\\NyaMeh\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\notification_bg_low_pressed.9.png",
+        "source": "E:\\IT\\SE\\NyaMeh\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.0\\res\\drawable-hdpi-v4\\notification_bg_low_pressed.9.png"
     },
     {
         "merged": "E:\\IT\\SE\\NyaMeh\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\ic_media_route_disabled_mono_dark.png",
@@ -216,6 +228,10 @@
         "source": "E:\\IT\\SE\\NyaMeh\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\drawable-hdpi-v4\\abc_list_divider_mtrl_alpha.9.png"
     },
     {
+        "merged": "E:\\IT\\SE\\NyaMeh\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\notify_panel_notification_icon_bg.png",
+        "source": "E:\\IT\\SE\\NyaMeh\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.0\\res\\drawable-hdpi-v4\\notify_panel_notification_icon_bg.png"
+    },
+    {
         "merged": "E:\\IT\\SE\\NyaMeh\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\abc_list_selector_disabled_holo_dark.9.png",
         "source": "E:\\IT\\SE\\NyaMeh\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\drawable-hdpi-v4\\abc_list_selector_disabled_holo_dark.9.png"
     },
@@ -274,6 +290,10 @@
     {
         "merged": "E:\\IT\\SE\\NyaMeh\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\ic_media_route_on_1_mono_dark.png",
         "source": "E:\\IT\\SE\\NyaMeh\\app\\build\\intermediates\\exploded-aar\\com.android.support\\mediarouter-v7\\22.0.0\\res\\drawable-hdpi-v4\\ic_media_route_on_1_mono_dark.png"
+    },
+    {
+        "merged": "E:\\IT\\SE\\NyaMeh\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\notification_bg_normal.9.png",
+        "source": "E:\\IT\\SE\\NyaMeh\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.0\\res\\drawable-hdpi-v4\\notification_bg_normal.9.png"
     },
     {
         "merged": "E:\\IT\\SE\\NyaMeh\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\abc_scrubber_control_to_pressed_mtrl_005.png",

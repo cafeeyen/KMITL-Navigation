@@ -11,7 +11,6 @@ import me.dm7.barcodescanner.zxing.ZXingScannerView;
 
 public class QRScanActivity extends AppCompatActivity implements ZXingScannerView.ResultHandler
 {
-    public final static String EXTRA_MESSAGE = "Nyameh.MESSAGE";
     private ZXingScannerView mScannerView;
 
     @Override

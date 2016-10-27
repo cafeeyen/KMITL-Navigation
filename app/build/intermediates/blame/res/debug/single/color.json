@@ -4,6 +4,10 @@
         "source": "E:\\IT\\SE\\NyaMeh\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\color\\abc_tint_default.xml"
     },
     {
+        "merged": "E:\\IT\\SE\\NyaMeh\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_hint_foreground_material_light.xml",
+        "source": "E:\\IT\\SE\\NyaMeh\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.0\\res\\color\\abc_hint_foreground_material_light.xml"
+    },
+    {
         "merged": "E:\\IT\\SE\\NyaMeh\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_tint_switch_thumb.xml",
         "source": "E:\\IT\\SE\\NyaMeh\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\color\\abc_tint_switch_thumb.xml"
     },
@@ -62,6 +66,10 @@
     {
         "merged": "E:\\IT\\SE\\NyaMeh\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_primary_text_material_light.xml",
         "source": "E:\\IT\\SE\\NyaMeh\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\color\\abc_primary_text_material_light.xml"
+    },
+    {
+        "merged": "E:\\IT\\SE\\NyaMeh\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_hint_foreground_material_dark.xml",
+        "source": "E:\\IT\\SE\\NyaMeh\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.0\\res\\color\\abc_hint_foreground_material_dark.xml"
     },
     {
         "merged": "E:\\IT\\SE\\NyaMeh\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_search_url_text.xml",
