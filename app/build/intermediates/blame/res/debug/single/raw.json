@@ -1,7 +1,15 @@
 [
     {
+        "merged": "C:\\Users\\RuikaLism\\Documents\\GitHub\\NyaMeh\\app\\build\\intermediates\\res\\merged\\debug\\raw\\gtm_analytics",
+        "source": "C:\\Users\\RuikaLism\\Documents\\GitHub\\NyaMeh\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-analytics\\7.5.0\\res\\raw\\gtm_analytics"
+    },
+    {
         "merged": "E:\\IT\\SE\\NyaMeh\\app\\build\\intermediates\\res\\merged\\debug\\raw\\zxing_beep.ogg",
         "source": "E:\\IT\\SE\\NyaMeh\\app\\build\\intermediates\\exploded-aar\\com.journeyapps\\zxing-android-embedded\\3.4.0\\res\\raw\\zxing_beep.ogg"
+    },
+    {
+        "merged": "C:\\Users\\RuikaLism\\Documents\\GitHub\\NyaMeh\\app\\build\\intermediates\\res\\merged\\debug\\raw\\zxing_beep.ogg",
+        "source": "C:\\Users\\RuikaLism\\Documents\\GitHub\\NyaMeh\\app\\build\\intermediates\\exploded-aar\\com.journeyapps\\zxing-android-embedded\\3.4.0\\res\\raw\\zxing_beep.ogg"
     },
     {
         "merged": "E:\\IT\\SE\\NyaMeh\\app\\build\\intermediates\\res\\merged\\debug\\raw\\gtm_analytics",
