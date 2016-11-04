@@ -1,14 +1,10 @@
 [
     {
-        "merged": "E:\\IT\\SE\\NyaMeh\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi\\ic_launcher.png",
-        "source": "E:\\IT\\SE\\NyaMeh\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher.png"
+        "merged": "D:\\Project\\NyaMehv04\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi\\logo.png",
+        "source": "D:\\Project\\NyaMehv04\\app\\src\\main\\res\\mipmap-mdpi\\logo.png"
     },
     {
-        "merged": "C:\\Users\\RuikaLism\\Documents\\GitHub\\NyaMeh\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi\\logo.png",
-        "source": "C:\\Users\\RuikaLism\\Documents\\GitHub\\NyaMeh\\app\\src\\main\\res\\mipmap-mdpi\\logo.png"
-    },
-    {
-        "merged": "C:\\Users\\RuikaLism\\Documents\\GitHub\\NyaMeh\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi\\ic_launcher.png",
-        "source": "C:\\Users\\RuikaLism\\Documents\\GitHub\\NyaMeh\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher.png"
+        "merged": "D:\\Project\\NyaMehv04\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi\\ic_launcher.png",
+        "source": "D:\\Project\\NyaMehv04\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher.png"
     }
 ]

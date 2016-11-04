@@ -58,6 +58,14 @@ public class QRScanActivity extends AppCompatActivity implements ZXingScannerVie
         mScannerView.stopCamera(); // Stop camera on pause
     }
 
+    @Override
+    public void onResume(){
+        super.onResume();
+        setContentView(mScannerView);
+        mScannerView.setResultHandler(this); // Register ourselves as a handler for scan results.
+        mScannerView.startCamera(); // Start camera
+    }
+
     private static boolean checkQRResult(String qrContent)
     {
         if (qrContent.length() > 4 && qrContent.substring(0, 4).compareTo("geo:") == 0
