@@ -1,75 +1,45 @@
-<?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="nyameh.nyameh.MainActivity"
-    android:background="@drawable/bg720_1280px">
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
 
-    <TextView
-        android:id="@+id/title2"
-        android:textSize="50sp"
-        android:textAlignment="center"
-        tools:ignore="UnusedAttribute"
-        android:textColor="@android:color/black"
-        tools:background="@android:color/background_light"
-        app:layout_constraintTop_toBottomOf="@+id/title"
-        android:layout_marginEnd="16dp"
-        app:layout_constraintRight_toRightOf="parent"
-        android:layout_marginRight="16dp"
-        android:layout_marginStart="16dp"
-        app:layout_constraintLeft_toLeftOf="parent"
-        android:layout_marginLeft="16dp"
-        android:layout_height="60dp"
-        android:layout_width="300dp" />
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/header_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/header_orange"
+        app:title="KMITL NAVIGATION" />
 
-    <TextView
-        android:id="@+id/title"
-        android:textSize="50sp"
-        android:textAlignment="center"
-        tools:ignore="UnusedAttribute"
-        android:textColor="@android:color/black"
-        tools:background="@android:color/black"
-        android:layout_marginTop="32dp"
-        app:layout_constraintTop_toTopOf="parent"
-        android:layout_marginEnd="16dp"
-        app:layout_constraintRight_toRightOf="parent"
-        android:layout_marginRight="16dp"
-        android:layout_marginStart="16dp"
-        app:layout_constraintLeft_toLeftOf="parent"
-        android:layout_marginLeft="16dp"
-        android:layout_height="60dp"
-        android:layout_width="300dp" />
 
-    <Button
-        android:layout_width="300dp"
-        android:layout_height="100dp"
-        android:background="@drawable/bt_scan"
-        android:layout_marginEnd="16dp"
-        app:layout_constraintRight_toRightOf="parent"
-        android:layout_marginRight="16dp"
-        android:layout_marginStart="16dp"
-        app:layout_constraintLeft_toLeftOf="parent"
-        android:layout_marginLeft="16dp"
-        android:layout_marginTop="48dp"
-        app:layout_constraintTop_toBottomOf="@+id/bt_map"
-        android:onClick="toQRScan"
-        android:id="@+id/bt_scan" />
+    <android.support.v4.widget.DrawerLayout
+        android:id="@+id/drawerLayout"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent">
 
-    <Button
-        android:layout_width="300dp"
-        android:layout_height="100dp"
-        android:id="@+id/bt_map"
-        android:background="@drawable/bt_map"
-        android:layout_marginEnd="16dp"
-        app:layout_constraintRight_toRightOf="parent"
-        android:layout_marginRight="16dp"
-        android:layout_marginStart="16dp"
-        app:layout_constraintLeft_toLeftOf="parent"
-        android:layout_marginLeft="16dp"
-        android:layout_marginTop="64dp"
-        app:layout_constraintTop_toBottomOf="@+id/title2"
-        android:onClick="toMaps" />
+        <FrameLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/containerView">
+        </FrameLayout>
 
-</android.support.constraint.ConstraintLayout>
+        <android.support.design.widget.NavigationView
+            android:id="@+id/navigation_view"
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            app:itemTextColor="@color/black"
+            app:itemIconTint="@color/orange"
+            app:menu="@menu/drawermenu"
+            android:layout_marginTop="-24dp"
+            android:background="@color/white"/>
+    </android.support.v4.widget.DrawerLayout>
+
+</LinearLayout>
