@@ -66,10 +66,12 @@ public class MainActivity extends AppCompatActivity{
         }
         else{
             if (count == 0) {
-                //some dialog confirm
+                //some dialog to confirm before getting out
                 super.onBackPressed();
             } else {
-                mFragmentManager.popBackStack();
+                for (int round = count; round >= 1; --round){ //for loop is work, I don't know why while didn't work
+                    mFragmentManager.popBackStack();
+                }
             }
         }
     }

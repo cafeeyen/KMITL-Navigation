@@ -35,6 +35,7 @@
         android:layout_marginLeft="12dp"
         android:layout_toRightOf="@+id/list_date"
         android:text="Header"
+        android:maxLines="1"
         android:textColor="#000000"
         android:textAppearance="?attr/textAppearanceListItem"
         android:textSize="18sp" />

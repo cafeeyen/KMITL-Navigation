@@ -31,9 +31,11 @@ public class DataRecyclererListListener implements View.OnClickListener {
         dialog.setTitle("Position" + position);
         dialog.setCancelable(true);
         TextView header =(TextView)dialog.findViewById(R.id.des_header);
-        TextView data =(TextView)dialog.findViewById(R.id.des_data);
+        TextView data = (TextView)dialog.findViewById(R.id.des_data);
+        TextView date = (TextView)dialog.findViewById(R.id.des_date);
         header.setText(evdata.getHeader());
-        data.setText("Description: " + evdata.getDescrpt());
+        data.setText("Description: \n" + evdata.getDescrpt());
+        date.setText("Date: " + evdata.getDate() + " " + evdata.getMonth());
         Button closeButton = (Button)dialog.findViewById(R.id.close_dialog_button);
         closeButton.setOnClickListener(new View.OnClickListener() {
             @Override

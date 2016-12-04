@@ -6,5 +6,8 @@
     <color name="white">#FFF</color>
     <color name="header_orange">#FFA726</color>
     <color name="dark_orange">#EE8820</color>
+    <color name="light_orange">#ffe6cc</color>
+    <color name="dark_choco_brown">#330d00</color>
+    <color name="warm_e_gray">#eeeeee</color>
 
 </resources>
