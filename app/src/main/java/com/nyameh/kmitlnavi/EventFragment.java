@@ -1,5 +1,7 @@
 package com.nyameh.kmitlnavi;
 
+import android.database.Cursor;
+import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v7.widget.LinearLayoutManager;
@@ -18,19 +20,30 @@ public class EventFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.events_fragment_layout, container, false);
-
         RecyclerView recyclerView = (RecyclerView) view.findViewById(R.id.event_recycler_view);
 
+        NyaMehDatabase mHelper = new NyaMehDatabase(getActivity());
+        SQLiteDatabase mDb = mHelper.getReadableDatabase();
+        Cursor mCursor = mDb.rawQuery(String.format("SELECT * FROM " + NyaMehDatabase.TABLE_NAME2), null);
+        mCursor.moveToFirst();
+
         ArrayList<EventData> eventListData = new ArrayList<>();
-        eventListData.add(new EventData("firstheader", "desdciptdsiontion", "FEB", "29"));
-        eventListData.add(new EventData("LooooooooooongHeader", "thisissdeescripfrtionmmnag]e,,wbtdtnehtey" +
-                "74k89.8.wevr2revtg53nu7i,o86,fv0[e0[qrvhu93pgtybw[neidvnier[0geqjrq[ghh3h000nyymy" +
-                "mdraefwrwto8746l8;69l52rtrg5lghjajaja", "AUG", "20"));
-        eventListData.add(new EventData("rgtyuio", "ykuyiluo;ulytr", "APR", "01"));
-        eventListData.add(new EventData("งานลาดถิ่นพระจอม", "ที่ไหนหมือไร่ย่างไหร", "JAN", "03"));
-        eventListData.add(new EventData("วันส่ง SE Project!", "โรงเชือด", "NOV", "06"));
-        eventListData.add(new EventData("สอบ", "าิเืำะรบพต-ภะตุภ้่ำอนดาำ่ไำลขเ่ล-", "JUL", "31"));
-        eventListData.add(new EventData("โลเร็ม", "ipsum dolor sit amet-", "SEP", "15"));
+
+        while(!mCursor.isAfterLast())
+        {
+            eventListData.add
+                    (
+                            new EventData
+                                    (
+                                            mCursor.getString(mCursor.getColumnIndex(NyaMehDatabase.COL_TITLE)),
+                                            mCursor.getString(mCursor.getColumnIndex(NyaMehDatabase.COL_CONTENT)),
+                                            monthText(mCursor.getString(mCursor.getColumnIndex(NyaMehDatabase.COL_DATE)).substring(3, 5)),
+                                            mCursor.getString(mCursor.getColumnIndex(NyaMehDatabase.COL_DATE)).substring(0, 2),
+                                            mCursor.getString(mCursor.getColumnIndex(NyaMehDatabase.COL_POSITION))
+                                    )
+                    );
+            mCursor.moveToNext();
+        }
 
         DataListRecyclerAdapter adapter = new DataListRecyclerAdapter(eventListData, getActivity());
         recyclerView.setAdapter(adapter);
@@ -38,5 +51,25 @@ public class EventFragment extends Fragment {
         recyclerView.setLayoutManager(new LinearLayoutManager(this.getActivity()));
 
         return view;
+    }
+
+    private String monthText(String month)
+    {
+        switch(month)
+        {
+            case "1": return "JAN";
+            case "2": return "FEB";
+            case "3": return "MAR";
+            case "4": return "APR";
+            case "5": return "MAY";
+            case "6": return "JUN";
+            case "7": return "JUL";
+            case "8": return "AUG";
+            case "9": return "SEP";
+            case "10": return "OCT";
+            case "11": return "NOV";
+            case "12": return "DEC";
+        }
+        return "";
     }
 }

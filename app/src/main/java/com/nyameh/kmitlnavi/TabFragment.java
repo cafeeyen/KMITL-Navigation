@@ -50,8 +50,8 @@ public class TabFragment extends Fragment {
         {
           switch (position)
           {
-              case 0 : return new EventFragment();
-              case 1 : return new NewsFragment();
+              case 0 : return new NewsFragment();
+              case 1 : return new EventFragment();
           }
         return null;
         }
@@ -68,9 +68,9 @@ public class TabFragment extends Fragment {
             switch (position)
             {
                 case 0 :
-                    return "Events";
-                case 1 :
                     return "News";
+                case 1 :
+                    return "Events";
             }
                 return null;
         }

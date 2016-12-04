@@ -1,18 +1,19 @@
 package model;
 
 public class EventData {
-    private String header, descrpt, month, date;
+    private String header, descrpt, month, date, position;
 
     public EventData(String header, String descrpt){
         this.header = header;
         this.descrpt = descrpt;
     }
 
-    public EventData(String header, String descrpt, String month, String date){
+    public EventData(String header, String descrpt, String month, String date, String position){
         this.header = header;
         this.descrpt = descrpt;
         this.month = month;
         this.date = date;
+        this.position = position;
     }
 
     public String getDescrpt() {return descrpt;}
@@ -30,4 +31,8 @@ public class EventData {
     public String getMonth() {return month;}
 
     public void setMonth(String month) {this.month = month;}
+
+    public String getPosition() {return position;}
+
+    public void setPosition(String position) {this.position = position;}
 }
