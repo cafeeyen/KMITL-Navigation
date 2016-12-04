@@ -27,7 +27,7 @@ public class NewsFragment extends Fragment {
 
         NyaMehDatabase mHelper = new NyaMehDatabase(getActivity());
         SQLiteDatabase mDb = mHelper.getReadableDatabase();
-        Cursor mCursor = mDb.rawQuery(String.format("SELECT * FROM " + NyaMehDatabase.TABLE_NAME2), null);
+        Cursor mCursor = mDb.rawQuery(String.format("SELECT * FROM " + NyaMehDatabase.TABLE_NAME2) + " ORDER BY " + NyaMehDatabase.COL_DATE + " DESC", null);
         mCursor.moveToFirst();
 
         ArrayList<EventData> eventListData = new ArrayList<>();
@@ -41,7 +41,7 @@ public class NewsFragment extends Fragment {
                                         mCursor.getString(mCursor.getColumnIndex(NyaMehDatabase.COL_TITLE)),
                                         mCursor.getString(mCursor.getColumnIndex(NyaMehDatabase.COL_CONTENT)),
                                         monthText(mCursor.getString(mCursor.getColumnIndex(NyaMehDatabase.COL_DATE)).substring(3, 5)),
-                                        mCursor.getString(mCursor.getColumnIndex(NyaMehDatabase.COL_DATE)).substring(0, 2),
+                                        mCursor.getString(mCursor.getColumnIndex(NyaMehDatabase.COL_DATE)).substring(6, 8),
                                         mCursor.getString(mCursor.getColumnIndex(NyaMehDatabase.COL_POSITION))
                                 )
                     );
@@ -59,15 +59,15 @@ public class NewsFragment extends Fragment {
     {
         switch(month)
         {
-            case "1": return "JAN";
-            case "2": return "FEB";
-            case "3": return "MAR";
-            case "4": return "APR";
-            case "5": return "MAY";
-            case "6": return "JUN";
-            case "7": return "JUL";
-            case "8": return "AUG";
-            case "9": return "SEP";
+            case "01": return "JAN";
+            case "02": return "FEB";
+            case "03": return "MAR";
+            case "04": return "APR";
+            case "05": return "MAY";
+            case "06": return "JUN";
+            case "07": return "JUL";
+            case "08": return "AUG";
+            case "09": return "SEP";
             case "10": return "OCT";
             case "11": return "NOV";
             case "12": return "DEC";
