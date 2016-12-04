@@ -61,15 +61,27 @@ public class MainActivity extends AppCompatActivity{
         int count = mFragmentManager.getBackStackEntryCount();
 
         mDrawerLayout = (DrawerLayout) findViewById(R.id.drawerLayout);
-        if (mDrawerLayout.isDrawerOpen(GravityCompat.START)) {
-            mDrawerLayout.closeDrawer(GravityCompat.START);
+        if(!(currentFragment instanceof MapFragment)){
+            if (mDrawerLayout.isDrawerOpen(GravityCompat.START)) { //this line error when && with kangbon
+                mDrawerLayout.closeDrawer(GravityCompat.START);
+            }
+            else{
+                if (count == 0) {
+                    //some dialog to confirm before getting out
+                    super.onBackPressed();
+                } else {
+                    for (int round = count; round >= 1; --round){ //for loop is work, I don't know why while didn't work
+                        mFragmentManager.popBackStack();
+                    }
+                }
+            }
         }
-        else{
+        else {
             if (count == 0) {
                 //some dialog to confirm before getting out
                 super.onBackPressed();
             } else {
-                for (int round = count; round >= 1; --round){ //for loop is work, I don't know why while didn't work
+                for (int round = count; round >= 1; --round) { //for loop is work, I don't know why while didn't work
                     mFragmentManager.popBackStack();
                 }
             }

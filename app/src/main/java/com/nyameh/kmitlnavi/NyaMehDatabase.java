@@ -17,6 +17,7 @@ public class NyaMehDatabase extends SQLiteOpenHelper {
     public static final String COL_CODE = "code";
 
     public static final String TABLE_NAME2 = "New";
+    public static final String COL_ID = "id";
     public static final String COL_TITLE = "title";
     public static final String COL_CONTENT = "content";
     public static final String COL_POSITION ="position";
@@ -30,7 +31,7 @@ public class NyaMehDatabase extends SQLiteOpenHelper {
     @Override
     public void onCreate(SQLiteDatabase db) {
         db.execSQL(String.format(
-                "CREATE TABLE %s (_id INTEGER PRIMARY KEY AUTOINCREMENT, %s TEXT, %s TEXT, %s TEXT, %s TEXT, %s TEXT );",
+                "CREATE TABLE %s (%s TEXT, %s TEXT, %s TEXT, %s TEXT, %s TEXT PRIMARY KEY);",
                 TABLE_NAME, COL_NAME, COL_DESCRIPTION, COL_LATITUDE, COL_LONGITUDE, COL_CODE
         ));
 
@@ -203,8 +204,8 @@ public class NyaMehDatabase extends SQLiteOpenHelper {
         ));
 
         db.execSQL(String.format(
-                "CREATE TABLE %s (_id INTEGER PRIMARY KEY AUTOINCREMENT, %s TEXT, %s TEXT, %s TEXT, %s TEXT );",
-                TABLE_NAME2, COL_TITLE, COL_CONTENT, COL_POSITION, COL_DATE
+                "CREATE TABLE %s (%s INTEGER PRIMARY KEY AUTOINCREMENT, %s TEXT, %s TEXT, %s TEXT, %s TEXT );",
+                TABLE_NAME2, COL_ID, COL_TITLE, COL_CONTENT, COL_POSITION, COL_DATE
         ));
 
         db.execSQL(String.format(
