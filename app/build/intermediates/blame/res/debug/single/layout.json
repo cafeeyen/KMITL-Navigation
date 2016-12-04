@@ -32,6 +32,10 @@
         "source": "D:\\Project\\QRNS0.8\\app\\build\\intermediates\\exploded-aar\\com.android.support\\design\\22.2.1\\res\\layout\\design_navigation_item_header.xml"
     },
     {
+        "merged": "D:\\Project\\QRNS0.8\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_splash_screen.xml",
+        "source": "D:\\Project\\QRNS0.8\\app\\src\\main\\res\\layout\\activity_splash_screen.xml"
+    },
+    {
         "merged": "D:\\Project\\QRNS0.8\\app\\build\\intermediates\\res\\merged\\debug\\layout\\layout_tab_text.xml",
         "source": "D:\\Project\\QRNS0.8\\app\\build\\intermediates\\exploded-aar\\com.android.support\\design\\22.2.1\\res\\layout\\layout_tab_text.xml"
     },
