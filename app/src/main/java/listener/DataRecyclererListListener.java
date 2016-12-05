@@ -24,11 +24,9 @@ public class DataRecyclererListListener implements View.OnClickListener {
     @Override
     public void onClick(View view) {
         EventListViewHolder vholder = (EventListViewHolder) view.getTag();
-        int position = vholder.getPosition();
         final Dialog dialog = new Dialog(context);
         dialog.setCanceledOnTouchOutside(true);
         dialog.setContentView(R.layout.description_dialogbox_layout);
-        dialog.setTitle("Position" + position);
         dialog.setCancelable(true);
         TextView header =(TextView)dialog.findViewById(R.id.des_header);
         TextView data = (TextView)dialog.findViewById(R.id.des_data);

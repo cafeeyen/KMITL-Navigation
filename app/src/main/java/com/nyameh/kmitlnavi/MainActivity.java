@@ -1,15 +1,14 @@
 package com.nyameh.kmitlnavi;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.NavigationView;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
-import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
-import android.util.Log;
 import android.view.MenuItem;
 
 public class MainActivity extends AppCompatActivity{
@@ -41,9 +40,16 @@ public class MainActivity extends AppCompatActivity{
                  mDrawerLayout.closeDrawers();
                  mFragmentTransaction = mFragmentManager.beginTransaction();
                  if (menuItem.getItemId() == R.id.nav_item_event_news){currentFragment = new TabFragment();}
-                 if (menuItem.getItemId() == R.id.nav_item_map){currentFragment = new MapFragment();}
-                 if (menuItem.getItemId() == R.id.nav_item_scan){currentFragment = new ScanFragment();}
-                 mFragmentTransaction.add(R.id.containerView, currentFragment).addToBackStack(null).commit();
+                 if (menuItem.getItemId() == R.id.nav_item_map)
+                 {
+                     Intent intent = new Intent(getApplicationContext(), MapsActivity.class);
+                     startActivity(intent);
+                 }
+                 if (menuItem.getItemId() == R.id.nav_item_scan)
+                 {
+                     Intent intent = new Intent(getApplicationContext(), ScanActivity.class);
+                     startActivity(intent);
+                 }
                  return false;
             }
         });
@@ -55,36 +61,5 @@ public class MainActivity extends AppCompatActivity{
         mDrawerLayout.setDrawerListener(mDrawerToggle);
         mDrawerToggle.syncState();
 
-    }
-    @Override
-    public void onBackPressed() {
-        int count = mFragmentManager.getBackStackEntryCount();
-
-        mDrawerLayout = (DrawerLayout) findViewById(R.id.drawerLayout);
-        if(!(currentFragment instanceof MapFragment)){
-            if (mDrawerLayout.isDrawerOpen(GravityCompat.START)) { //this line error when && with kangbon
-                mDrawerLayout.closeDrawer(GravityCompat.START);
-            }
-            else{
-                if (count == 0) {
-                    //some dialog to confirm before getting out
-                    super.onBackPressed();
-                } else {
-                    for (int round = count; round >= 1; --round){ //for loop is work, I don't know why while didn't work
-                        mFragmentManager.popBackStack();
-                    }
-                }
-            }
-        }
-        else {
-            if (count == 0) {
-                //some dialog to confirm before getting out
-                super.onBackPressed();
-            } else {
-                for (int round = count; round >= 1; --round) { //for loop is work, I don't know why while didn't work
-                    mFragmentManager.popBackStack();
-                }
-            }
-        }
     }
 }
