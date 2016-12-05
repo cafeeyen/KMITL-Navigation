@@ -17,6 +17,8 @@ import model.EventData;
 
 public class FavoriteFragment extends Fragment {
 
+    private ArrayList<EventData> FavoriteListData;
+
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.events_fragment_layout, container, false);
@@ -29,25 +31,25 @@ public class FavoriteFragment extends Fragment {
                 + " WHERE " + NyaMehDatabase.COL_FAVORITE + " ='true'", null);
         mCursor.moveToFirst();
 
-        ArrayList<EventData> eventListData = new ArrayList<>();
+        FavoriteListData = new ArrayList<>();
 
         while(!mCursor.isAfterLast())
         {
-            eventListData.add
+            FavoriteListData.add
                     (
                             new EventData
                                     (
                                             mCursor.getString(mCursor.getColumnIndex(NyaMehDatabase.COL_TITLE)),
                                             mCursor.getString(mCursor.getColumnIndex(NyaMehDatabase.COL_CONTENT)),
                                             monthText(mCursor.getString(mCursor.getColumnIndex(NyaMehDatabase.COL_DATE)).substring(3, 5)),
-                                            NyaMehDatabase.COL_ID + mCursor.getString(mCursor.getColumnIndex(NyaMehDatabase.COL_ID)),
+                                            mCursor.getString(mCursor.getColumnIndex(NyaMehDatabase.COL_DATE)).substring(6, 8),
                                             mCursor.getString(mCursor.getColumnIndex(NyaMehDatabase.COL_POSITION))
                                     )
                     );
             mCursor.moveToNext();
         }
 
-        DataListRecyclerAdapter adapter = new DataListRecyclerAdapter(eventListData, getActivity());
+        DataListRecyclerAdapter adapter = new DataListRecyclerAdapter(FavoriteListData, getActivity());
         recyclerView.setAdapter(adapter);
         recyclerView.setHasFixedSize(true);
         recyclerView.setLayoutManager(new LinearLayoutManager(this.getActivity()));
