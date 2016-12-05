@@ -3,6 +3,7 @@ package listener;
 import android.app.Dialog;
 import android.content.Context;
 import android.view.View;
+import android.view.Window;
 import android.widget.Button;
 import android.widget.TextView;
 
@@ -25,6 +26,7 @@ public class DataRecyclererListListener implements View.OnClickListener {
     public void onClick(View view) {
         EventListViewHolder vholder = (EventListViewHolder) view.getTag();
         final Dialog dialog = new Dialog(context);
+        dialog.requestWindowFeature(Window.FEATURE_NO_TITLE);
         dialog.setCanceledOnTouchOutside(true);
         dialog.setContentView(R.layout.description_dialogbox_layout);
         dialog.setCancelable(true);
