@@ -7,6 +7,7 @@ import android.database.sqlite.SQLiteDatabase;
 import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
@@ -28,10 +29,6 @@ public class ScanActivity extends AppCompatActivity implements ZXingScannerView.
     protected void onCreate(Bundle savedInstanceState)
     {
         super.onCreate(savedInstanceState);
-        mScannerView = new ZXingScannerView(this);
-        setContentView(mScannerView);
-        mScannerView.setResultHandler(this);
-        mScannerView.startCamera();
     }
 
     @Override
@@ -56,7 +53,7 @@ public class ScanActivity extends AppCompatActivity implements ZXingScannerView.
             });
 
             Button diaNavigateButton = (Button) qrPassDialog.findViewById(R.id.qrpass_navigate);
-            diaNavigateButton.setOnClickListener(new ScanNavigateClickListener(ScanActivity.this, placeCode));
+            diaNavigateButton.setOnClickListener(new ScanNavigateClickListener(ScanActivity.this, placeCode, qrPassDialog));
 
             qrPassDialog.setOnDismissListener(new DialogInterface.OnDismissListener() {
                 @Override
@@ -69,7 +66,7 @@ public class ScanActivity extends AppCompatActivity implements ZXingScannerView.
         else
         {
             Toast.makeText(this, "Couldn't find data from this QR Code", Toast.LENGTH_SHORT).show();
-            Handler handler = new Handler();
+            Handler handler = new Handler(getMainLooper());
             handler.postDelayed(new Runnable()
             {
                 @Override
@@ -124,6 +121,8 @@ public class ScanActivity extends AppCompatActivity implements ZXingScannerView.
     public void onResume()
     {
         super.onResume();
+        mScannerView = new ZXingScannerView(this);
+        setContentView(mScannerView);
         mScannerView.setResultHandler(this);
         mScannerView.startCamera();
     }

@@ -1,5 +1,6 @@
 package listener;
 
+import android.app.Dialog;
 import android.content.Context;
 import android.content.Intent;
 import android.database.Cursor;
@@ -12,10 +13,12 @@ import com.nyameh.kmitlnavi.NyaMehDatabase;
 public class ScanNavigateClickListener implements View.OnClickListener {
     Context context;
     String placeCode;
+    Dialog qrPassDialog;
 
-    public ScanNavigateClickListener(Context context, String placeCode){
+    public ScanNavigateClickListener(Context context, String placeCode, Dialog qrPassDialog){
         this.context  = context;
         this.placeCode = placeCode;
+        this.qrPassDialog = qrPassDialog;
     }
 
     @Override
@@ -25,10 +28,11 @@ public class ScanNavigateClickListener implements View.OnClickListener {
         Cursor mCursor = mDb.rawQuery(String.format("SELECT * FROM " + NyaMehDatabase.TABLE_NAME)
                 + " WHERE " + NyaMehDatabase.COL_CODE + "='" + placeCode + "'", null);
         mCursor.moveToFirst();
-
+        
         Intent intent = new Intent(context, MapsActivity.class);
         intent.putExtra("Lat", Double.parseDouble(mCursor.getString(mCursor.getColumnIndex(NyaMehDatabase.COL_LATITUDE))));
         intent.putExtra("Lng", Double.parseDouble(mCursor.getString(mCursor.getColumnIndex(NyaMehDatabase.COL_LONGITUDE))));
         context.startActivity(intent);
+        qrPassDialog.dismiss();
     }
 }

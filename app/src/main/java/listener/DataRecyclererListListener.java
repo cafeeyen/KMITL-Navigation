@@ -67,6 +67,5 @@ public class DataRecyclererListListener implements View.OnClickListener {
             }
         });
         dialog.show();
-
     }
 }
