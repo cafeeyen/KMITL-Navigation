@@ -8,7 +8,6 @@ import android.view.View;
 
 import com.nyameh.kmitlnavi.MapsActivity;
 import com.nyameh.kmitlnavi.NyaMehDatabase;
-import com.nyameh.kmitlnavi.ScanActivity;
 
 public class ScanNavigateClickListener implements View.OnClickListener {
     Context context;

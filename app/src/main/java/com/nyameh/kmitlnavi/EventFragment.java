@@ -24,7 +24,7 @@ public class EventFragment extends Fragment {
 
         NyaMehDatabase mHelper = new NyaMehDatabase(getActivity());
         SQLiteDatabase mDb = mHelper.getReadableDatabase();
-        Cursor mCursor = mDb.rawQuery(String.format("SELECT * FROM " + NyaMehDatabase.TABLE_NAME2), null);
+        Cursor mCursor = mDb.rawQuery(String.format("SELECT * FROM New WHERE id=1"), null);
         mCursor.moveToFirst();
 
         ArrayList<EventData> eventListData = new ArrayList<>();
@@ -38,7 +38,7 @@ public class EventFragment extends Fragment {
                                             mCursor.getString(mCursor.getColumnIndex(NyaMehDatabase.COL_TITLE)),
                                             mCursor.getString(mCursor.getColumnIndex(NyaMehDatabase.COL_CONTENT)),
                                             monthText(mCursor.getString(mCursor.getColumnIndex(NyaMehDatabase.COL_DATE)).substring(3, 5)),
-                                            mCursor.getString(mCursor.getColumnIndex(NyaMehDatabase.COL_DATE)).substring(0, 2),
+                                            NyaMehDatabase.COL_ID + mCursor.getString(mCursor.getColumnIndex(NyaMehDatabase.COL_ID)),
                                             mCursor.getString(mCursor.getColumnIndex(NyaMehDatabase.COL_POSITION))
                                     )
                     );
