@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content" android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/qrpass_header_text"
+        android:text="QR code scaned, type match with this app. "
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textColor="@color/black"
+        android:textSize="16dp"
+        android:layout_margin="10dp" />
+
+    <ScrollView
+        android:id="@+id/qrnotpass_scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_below="@+id/qrpass_header_text"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:text=""
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/qrpass_desc_text"
+                android:layout_below="@+id/qrpass_header_text"
+                android:padding="5dp"
+                android:textSize="14dp"
+                android:textColor="@color/warm_5_gray"/>
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/qrpass_navigate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/qrnotpass_scroll_view"
+        android:padding="7dp"
+        android:layout_margin="10dp"
+        android:text="Navigate Me From Here"
+        android:drawableLeft="@drawable/icon_navigatehere"
+        android:background="@color/orange"
+        />
+
+    <Button
+        android:id="@+id/qrpass_close"
+        android:layout_weight="0.5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:text="Close"
+        android:background="@color/warm_e_gray"
+        android:layout_below="@+id/qrpass_navigate"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="20dp" />
+
+</RelativeLayout>

@@ -9,5 +9,9 @@
     <color name="light_orange">#ffe6cc</color>
     <color name="dark_choco_brown">#330d00</color>
     <color name="warm_e_gray">#eeeeee</color>
+    <color name="warm_c_gray">#cccccc</color>
+    <color name="warm_a_gray">#aaaaaa</color>
+    <color name="warm_5_gray">#555555</color>
+    <color name="pure_red">#FF0000</color>
 
 </resources>

@@ -1,7 +1,7 @@
 package com.nyameh.kmitlnavi;
 
 import android.app.Dialog;
-import android.content.Intent;
+import android.content.DialogInterface;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.os.Handler;
@@ -9,7 +9,6 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
-import android.view.Window;
 import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -39,12 +38,11 @@ public class ScanActivity extends AppCompatActivity implements ZXingScannerView.
     @Override
     public void handleResult(Result result)
     {
-
+        final Dialog qrPassDialog = new Dialog(ScanActivity.this);
         if(findData(result.getText()))
         {
-            final Dialog qrPassDialog = new Dialog(ScanActivity.this);
             qrPassDialog.setCanceledOnTouchOutside(true);
-            qrPassDialog.setContentView(R.layout.qr_pass_dialogbox_fragment);
+            qrPassDialog.setContentView(R.layout.qr_pass_dialogbox);
             qrPassDialog.setTitle("Scan Result");
 
             TextView diaShortDecpt = (TextView) qrPassDialog.findViewById(R.id.qrpass_desc_text);
@@ -55,13 +53,19 @@ public class ScanActivity extends AppCompatActivity implements ZXingScannerView.
                 @Override
                 public void onClick(View view) {
                     qrPassDialog.dismiss();
-                    mScannerView.resumeCameraPreview(ScanActivity.this);
                 }
             });
 
             Button diaNavigateButton = (Button) qrPassDialog.findViewById(R.id.qrpass_navigate);
             diaNavigateButton.setOnClickListener(new ScanNavigateClickListener(ScanActivity.this, placeCode));
-            qrPassDialog.show();
+
+            qrPassDialog.setOnDismissListener(new DialogInterface.OnDismissListener() {
+                @Override
+                public void onDismiss(DialogInterface dialogInterface) {
+                    mScannerView.resumeCameraPreview(ScanActivity.this);
+                }
+            });
+            if(!qrPassDialog.isShowing()){qrPassDialog.show();}
         }
         else
         {
@@ -128,6 +132,7 @@ public class ScanActivity extends AppCompatActivity implements ZXingScannerView.
     @Override
     public void onPause()
     {
+        Log.i("test", "======================== OnPause PPPPPPPPPPPPPPPPPPPP============");
         super.onPause();
         mScannerView.stopCamera();
     }
