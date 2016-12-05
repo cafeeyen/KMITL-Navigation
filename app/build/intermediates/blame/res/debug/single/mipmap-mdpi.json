@@ -1,10 +1,10 @@
 [
     {
-        "merged": "E:\\IT\\SE\\NyaMeh\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi\\ic_launcher.png",
-        "source": "E:\\IT\\SE\\NyaMeh\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher.png"
+        "merged": "D:\\Project\\QRNS1.5.2\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi\\logo.png",
+        "source": "D:\\Project\\QRNS1.5.2\\app\\src\\main\\res\\mipmap-mdpi\\logo.png"
     },
     {
-        "merged": "E:\\IT\\SE\\NyaMeh\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi\\logo.png",
-        "source": "E:\\IT\\SE\\NyaMeh\\app\\src\\main\\res\\mipmap-mdpi\\logo.png"
+        "merged": "D:\\Project\\QRNS1.5.2\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi\\ic_launcher.png",
+        "source": "D:\\Project\\QRNS1.5.2\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher.png"
     }
 ]

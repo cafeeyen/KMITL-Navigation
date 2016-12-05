@@ -10,7 +10,8 @@ import com.nyameh.kmitlnavi.R;
 
 import java.util.ArrayList;
 
-import listener.DataRecyclererListListener;
+import listener.ClickRecyclerListListener;
+import listener.LongRecyclerListListener;
 import model.EventData;
 import view.EventListViewHolder;
 
@@ -49,7 +50,8 @@ public class DataListRecyclerAdapter extends RecyclerView.Adapter<EventListViewH
         holder.tv2_descrpt.setText(evdata.getDescrpt());
         holder.tv3_month.setText(evdata.getMonth());
         holder.tv4_date.setText(evdata.getDate());
-        holder.itemView.setOnClickListener(new DataRecyclererListListener(context, evdata));
+        holder.itemView.setOnClickListener(new ClickRecyclerListListener(context, evdata));
+        holder.itemView.setOnLongClickListener(new LongRecyclerListListener(context, evdata));
         holder.itemView.setTag(holder);
     }
 

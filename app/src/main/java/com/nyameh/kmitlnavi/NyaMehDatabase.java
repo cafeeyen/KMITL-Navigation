@@ -22,6 +22,7 @@ public class NyaMehDatabase extends SQLiteOpenHelper {
     public static final String COL_CONTENT = "content";
     public static final String COL_POSITION ="position";
     public static final String COL_DATE = "date";
+    public static final String COL_FAVORITE = "favorite";
 
 
     public NyaMehDatabase(Context context) {
@@ -203,22 +204,24 @@ public class NyaMehDatabase extends SQLiteOpenHelper {
                 "ลานกิจกรรมข้างสนามกีฬา", "ลานว่างพักผ่อนและออกกำลังกายของสถาบัน", "13.728920", "100.772179", "L028"
         ));
 
+        //table news 2
+
         db.execSQL(String.format(
-                "CREATE TABLE %s (%s INTEGER PRIMARY KEY AUTOINCREMENT, %s TEXT, %s TEXT, %s TEXT, %s TEXT );",
-                TABLE_NAME2, COL_ID, COL_TITLE, COL_CONTENT, COL_POSITION, COL_DATE
+                "CREATE TABLE %s (%s INTEGER PRIMARY KEY AUTOINCREMENT, %s TEXT, %s TEXT, %s TEXT, %s TEXT , %s TEXT );",
+                TABLE_NAME2, COL_ID, COL_TITLE, COL_CONTENT, COL_POSITION, COL_DATE, COL_FAVORITE
         ));
 
         db.execSQL(String.format(
-                "INSERT INTO %s (%s, %s, %s, %s) VALUES('%s', '%s', '%s', '%s');",
-                TABLE_NAME2, COL_TITLE, COL_CONTENT, COL_POSITION, COL_DATE,
+                "INSERT INTO %s (%s, %s, %s, %s, %s) VALUES('%s', '%s', '%s', '%s', '%s');",
+                TABLE_NAME2, COL_TITLE, COL_CONTENT, COL_POSITION, COL_DATE, COL_FAVORITE,
                 "ขอเชิญพี่น้องชาว สจล. ร่วมรวมพลังแห่งความภักดี 22 พ.ย.นี้", "ขอเชิญนักศึกษา คณาจารย์ บุคลากรของสถาบันเทคโนโลยีพระจอมเกล้าเจ้าคุณทหารลาดกระบัง ร่วมงาน “รวมพลังแห่งความภักดี” เพื่อประกาศความจงรักภักดี และร่วมรำลึกถึงพระบาทสมเด็จพระปรมินทรมหาภูมิพลอดุลยเดชพร้อมกันทั่วประเทศ ในวันอังคารที่ 22 พฤศจิกายน 2559 \n" +
                         "ณ ลานเอนกประสงค์ ชั้น 1 สำนักงานอธิการบดี อาคารกรมหลวงนราธิวาสราชนครินทร์ เวลา 7.30 น. \n" +
-                        "แต่งกายสุภาพ ไว้ทุกข์ (สำหรับข้าราชการแต่งชุดปกติขาวไว้ทุกข์)", "L004", "59/11/22"
+                        "แต่งกายสุภาพ ไว้ทุกข์ (สำหรับข้าราชการแต่งชุดปกติขาวไว้ทุกข์)", "L004", "59/11/22", "false"
         ));
 
         db.execSQL(String.format(
-                "INSERT INTO %s (%s, %s, %s, %s) VALUES('%s', '%s', '%s', '%s');",
-                TABLE_NAME2, COL_TITLE, COL_CONTENT, COL_POSITION, COL_DATE,
+                "INSERT INTO %s (%s, %s, %s, %s, %s) VALUES('%s', '%s', '%s', '%s', '%s');",
+                TABLE_NAME2, COL_TITLE, COL_CONTENT, COL_POSITION, COL_DATE, COL_FAVORITE,
                 "เรียนTOEICฟรี รุ่นสุดท้าย", "ด้วยสถาบันโดยส่วนกิจการนักศึกษา จัดโครงการเตรียมความพร้อมสู่ประชาคมอาเซี่ยน ปีงบประมาณ 2559\n" +
                         "เปิดหลักสูตร TOEIC , Job Interview , Presentation , Academic Writing โดยสอนภาษาอังกฤษให้นักศึกษาของสถาบัน นักศึกษาปริญญาตรี ปริญญาโท ปริญญาเอก และนักศึกษาที่จบการศึกษาไปแล้วไม่เกิน 1 ปี โดยไม่คิดค่าใช้จ่าย\n" +
                         "รอบสุดท้ายก่อนจบโครงการเรียนฟรีภาษาอังกฤษ 2559 KMITL\n" +
@@ -228,29 +231,29 @@ public class NyaMehDatabase extends SQLiteOpenHelper {
                         "ตั้งแต่วันที่ 11 - 26 ส.ค. 2559 นี้เท่านั้น\n" +
                         "พิเศษ!! เฉพาะออนไลน์เท่านั้น\n" +
                         "เมื่อลงทะเบียนแล้ว สามารถติดต่อรับของที่ระลึกจากทางสถาบันได้ทันที\n" +
-                        "สอบถามรายละเอียดเพิ่มเติมโทร 02 326 4633", "L006", "59/08/11"
+                        "สอบถามรายละเอียดเพิ่มเติมโทร 02 326 4633", "L006", "59/08/11", "false"
         ));
 
         db.execSQL(String.format(
-                "INSERT INTO %s (%s, %s, %s, %s) VALUES('%s', '%s', '%s', '%s');",
-                TABLE_NAME2, COL_TITLE, COL_CONTENT, COL_POSITION, COL_DATE,
+                "INSERT INTO %s (%s, %s, %s, %s, %s) VALUES('%s', '%s', '%s', '%s', '%s');",
+                TABLE_NAME2, COL_TITLE, COL_CONTENT, COL_POSITION, COL_DATE, COL_FAVORITE,
                 "อบรมการปลูกพืชโดยไม่ใช้ดินรุ่นพิเศษ เรื่อง การปลูกพืชโดยไม่ใช้ดินแนวใหม่ที่มีการใช้น้ำและปุ๋ยอย่างมีประสิทธิภาพ", "คณะเทคโนโลยีการเกษตร สถาบันเทคโนโลยีพระจอมเกล้าเจ้าคุณทหารลาดกระบังร่วมกับสำนักงานกองทุนสนับสนุนการวิจัย (สกว.) การฝึกอบรมการปลูกพืชโดยไม่ใช้ดินรุ่นพิเศษ เรื่อง การปลูกพืชโดยไม่ใช้ดินแนวใหม่ที่มีการใช้น้ำและปุ๋ยอย่างมีประสิทธิภาพ\n" +
                         "\n" +
                         "\n" +
                         "วันที่ 15-16 ตุลาคม 2559\n" +
-                        "ณ คณะเทคโนโลยีการเกษตร อาคารเจ้าคุณทหาร", "L019", "59/10/15"
+                        "ณ คณะเทคโนโลยีการเกษตร อาคารเจ้าคุณทหาร", "L019", "59/10/15", "false"
         ));
 
         db.execSQL(String.format(
-                "INSERT INTO %s (%s, %s, %s, %s) VALUES('%s', '%s', '%s', '%s');",
-                TABLE_NAME2, COL_TITLE, COL_CONTENT, COL_POSITION, COL_DATE,
+                "INSERT INTO %s (%s, %s, %s, %s, %s) VALUES('%s', '%s', '%s', '%s', '%s');",
+                TABLE_NAME2, COL_TITLE, COL_CONTENT, COL_POSITION, COL_DATE, COL_FAVORITE,
                 "พิธีพระราชทานปริญญาบัตรของสถาบันเทคโนโลยีพระจอมเกล้าเจ้าคุณทหารลาดกระบังประจำปีการศึกษา 2558 (ปี 2559)", "นัดซ้อมย่อยบัณฑิตกรณีพิเศษในวันเสาร์ที่ 12 พฤศจิกายน 2559 เวลา 13.00 น. ณ ห้อง 107 อาคาร ศ.ประสมรังสิโรจน์ คณะสถาปัตยกรรมศาสตร์ โปรดหลีกเลี่ยงเส้นทางการจราจรบริเวณใกล้เคียงสถาบันเทคโนโลยีพระจอมเกล้าเจ้าคุณทหารลาดกระบัง\n" +
-                        "เนื่องจากพิธีพระราชทานปริญญาบัตรในวันที่ 12-13 และ 16 พฤศจิกายน 2559", "L001", "59/10/02"
+                        "เนื่องจากพิธีพระราชทานปริญญาบัตรในวันที่ 12-13 และ 16 พฤศจิกายน 2559", "L001", "59/10/02", "false"
         ));
 
         db.execSQL(String.format(
-                "INSERT INTO %s (%s, %s, %s, %s) VALUES('%s', '%s', '%s', '%s');",
-                TABLE_NAME2, COL_TITLE, COL_CONTENT, COL_POSITION, COL_DATE,
+                "INSERT INTO %s (%s, %s, %s, %s, %s) VALUES('%s', '%s', '%s', '%s', '%s');",
+                TABLE_NAME2, COL_TITLE, COL_CONTENT, COL_POSITION, COL_DATE, COL_FAVORITE,
                 "เรียนTOEICฟรี รุ่นสุดท้าย", "ด้วยสถาบันโดยส่วนกิจการนักศึกษา จัดโครงการเตรียมความพร้อมสู่ประชาคมอาเซี่ยน ปีงบประมาณ 2559\n" +
                         "เปิดหลักสูตร TOEIC , Job Interview , Presentation , Academic Writing โดยสอนภาษาอังกฤษให้นักศึกษาของสถาบัน นักศึกษาปริญญาตรี ปริญญาโท ปริญญาเอก และนักศึกษาที่จบการศึกษาไปแล้วไม่เกิน 1 ปี โดยไม่คิดค่าใช้จ่าย\n" +
                         "รอบสุดท้ายก่อนจบโครงการเรียนฟรีภาษาอังกฤษ 2559 KMITL\n" +
@@ -260,14 +263,14 @@ public class NyaMehDatabase extends SQLiteOpenHelper {
                         "ตั้งแต่วันที่ 11 - 26 ส.ค. 2559 นี้เท่านั้น\n" +
                         "พิเศษ!! เฉพาะออนไลน์เท่านั้น\n" +
                         "เมื่อลงทะเบียนแล้ว สามารถติดต่อรับของที่ระลึกจากทางสถาบันได้ทันที\n" +
-                        "สอบถามรายละเอียดเพิ่มเติมโทร 02 326 4633", "L006", "59/08/11"
+                        "สอบถามรายละเอียดเพิ่มเติมโทร 02 326 4633", "L006", "59/08/11", "false"
         ));
 
         db.execSQL(String.format(
-                "INSERT INTO %s (%s, %s, %s, %s) VALUES('%s', '%s', '%s', '%s');",
-                TABLE_NAME2, COL_TITLE, COL_CONTENT, COL_POSITION, COL_DATE,
+                "INSERT INTO %s (%s, %s, %s, %s, %s) VALUES('%s', '%s', '%s', '%s', '%s');",
+                TABLE_NAME2, COL_TITLE, COL_CONTENT, COL_POSITION, COL_DATE, COL_FAVORITE,
                 "ขอเชิญร่วมบริจาคโลหิต", "ขอเชิญอาจารย์ บุคลากร และนักศึกษาในสถาบัน ฯ ทุกท่าน ร่วมบริจาคโลหิตกับศูนย์บริการโลหิตแห่งชาติ สภากาชาดไทย \n" +
-                        "ในวันที่ 31 ตุลาคม 2559 และ 1 พฤศจิกายน 2559 เวลา 09.00 - 15.00 น. ณ งานสุขภาพอนามัย อาคารสมเด็จพระเทพฯ สถาบันเทคโนโลยี พระจอมเกล้าเจ้าคุณทหารลาดกระบัง", "L006", "59/10/31"
+                        "ในวันที่ 31 ตุลาคม 2559 และ 1 พฤศจิกายน 2559 เวลา 09.00 - 15.00 น. ณ งานสุขภาพอนามัย อาคารสมเด็จพระเทพฯ สถาบันเทคโนโลยี พระจอมเกล้าเจ้าคุณทหารลาดกระบัง", "L006", "59/10/31", "false"
         ));
     }
 

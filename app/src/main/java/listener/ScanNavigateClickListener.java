@@ -28,7 +28,7 @@ public class ScanNavigateClickListener implements View.OnClickListener {
         Cursor mCursor = mDb.rawQuery(String.format("SELECT * FROM " + NyaMehDatabase.TABLE_NAME)
                 + " WHERE " + NyaMehDatabase.COL_CODE + "='" + placeCode + "'", null);
         mCursor.moveToFirst();
-        
+
         Intent intent = new Intent(context, MapsActivity.class);
         intent.putExtra("Lat", Double.parseDouble(mCursor.getString(mCursor.getColumnIndex(NyaMehDatabase.COL_LATITUDE))));
         intent.putExtra("Lng", Double.parseDouble(mCursor.getString(mCursor.getColumnIndex(NyaMehDatabase.COL_LONGITUDE))));

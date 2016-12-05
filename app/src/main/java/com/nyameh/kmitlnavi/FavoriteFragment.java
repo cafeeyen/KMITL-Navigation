@@ -24,7 +24,9 @@ public class FavoriteFragment extends Fragment {
 
         NyaMehDatabase mHelper = new NyaMehDatabase(getActivity());
         SQLiteDatabase mDb = mHelper.getReadableDatabase();
-        Cursor mCursor = mDb.rawQuery(String.format("SELECT * FROM New WHERE id=9"), null);
+        //================= Query Here ==================
+        Cursor mCursor = mDb.rawQuery("SELECT * FROM " + NyaMehDatabase.TABLE_NAME2
+                + " WHERE " + NyaMehDatabase.COL_FAVORITE + " ='true'", null);
         mCursor.moveToFirst();
 
         ArrayList<EventData> eventListData = new ArrayList<>();
