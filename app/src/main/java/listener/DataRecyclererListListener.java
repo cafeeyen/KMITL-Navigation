@@ -36,11 +36,20 @@ public class DataRecyclererListListener implements View.OnClickListener {
         header.setText(evdata.getHeader());
         data.setText("Description: \n" + evdata.getDescrpt());
         date.setText("Date: " + evdata.getDate() + " " + evdata.getMonth());
+
         Button closeButton = (Button)dialog.findViewById(R.id.close_dialog_button);
         closeButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 dialog.dismiss();
+            }
+        });
+
+        Button navigateButton = (Button)dialog.findViewById(R.id.route_dialog_button);
+        navigateButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                //cal evadata gat lat long
             }
         });
         dialog.show();
