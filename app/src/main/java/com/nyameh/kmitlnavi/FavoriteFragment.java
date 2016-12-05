@@ -49,7 +49,7 @@ public class FavoriteFragment extends Fragment {
             mCursor.moveToNext();
         }
 
-        DataListRecyclerAdapter adapter = new DataListRecyclerAdapter(FavoriteListData, getActivity());
+        DataListRecyclerAdapter adapter = new DataListRecyclerAdapter(FavoriteListData, getActivity(), "Favorite");
         recyclerView.setAdapter(adapter);
         recyclerView.setHasFixedSize(true);
         recyclerView.setLayoutManager(new LinearLayoutManager(this.getActivity()));

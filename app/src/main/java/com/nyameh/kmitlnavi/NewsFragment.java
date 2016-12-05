@@ -47,7 +47,7 @@ public class NewsFragment extends Fragment {
                     );
             mCursor.moveToNext();
         }
-        DataListRecyclerAdapter adapter = new DataListRecyclerAdapter(eventListData, getActivity());
+        DataListRecyclerAdapter adapter = new DataListRecyclerAdapter(eventListData, getActivity(), "News");
         recyclerView.setAdapter(adapter);
         recyclerView.setHasFixedSize(true);
         recyclerView.setLayoutManager(new LinearLayoutManager(this.getActivity()));

@@ -22,10 +22,12 @@ public class DataListRecyclerAdapter extends RecyclerView.Adapter<EventListViewH
     LayoutInflater inflater;
     ArrayList<EventData> eventListData;
     RecyclerView mRecyclerView;
+    String tabName;
 
-    public DataListRecyclerAdapter(ArrayList<EventData> eventListData, Context context) {
+    public DataListRecyclerAdapter(ArrayList<EventData> eventListData, Context context, String tabName) {
         this.eventListData = eventListData;
         this.context = context;
+        this.tabName = tabName;
     }
 
     @Override
@@ -51,7 +53,7 @@ public class DataListRecyclerAdapter extends RecyclerView.Adapter<EventListViewH
         holder.tv3_month.setText(evdata.getMonth());
         holder.tv4_date.setText(evdata.getDate());
         holder.itemView.setOnClickListener(new ClickRecyclerListListener(context, evdata));
-        holder.itemView.setOnLongClickListener(new LongRecyclerListListener(context, evdata));
+        holder.itemView.setOnLongClickListener(new LongRecyclerListListener(context, evdata, tabName));
         holder.itemView.setTag(holder);
     }
 
