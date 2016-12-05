@@ -14,8 +14,6 @@ public class EventListViewHolder extends RecyclerView.ViewHolder {
 
     public EventListViewHolder(View itemView) {
         super(itemView);
-/*        Typeface typeFace = Typeface.createFromAsset(itemView.getContext().getAssets(),"fonts/GILLUBCD.TTF");*/
-
         tv1_header = (TextView) itemView.findViewById(R.id.list_header);
         tv2_descrpt = (TextView) itemView.findViewById(R.id.list_desc);
         tv3_month = (TextView) itemView.findViewById(R.id.month);

@@ -4,8 +4,6 @@ import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
-import com.nyameh.kmitlnavi.MainActivity;
-
 public class SplashScreenActivity extends AppCompatActivity {
 
     @Override

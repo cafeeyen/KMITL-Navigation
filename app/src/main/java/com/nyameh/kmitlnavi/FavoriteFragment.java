@@ -15,7 +15,7 @@ import java.util.ArrayList;
 import adapter.DataListRecyclerAdapter;
 import model.EventData;
 
-public class EventFragment extends Fragment {
+public class FavoriteFragment extends Fragment {
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
@@ -24,7 +24,7 @@ public class EventFragment extends Fragment {
 
         NyaMehDatabase mHelper = new NyaMehDatabase(getActivity());
         SQLiteDatabase mDb = mHelper.getReadableDatabase();
-        Cursor mCursor = mDb.rawQuery(String.format("SELECT * FROM New WHERE id=1"), null);
+        Cursor mCursor = mDb.rawQuery(String.format("SELECT * FROM New WHERE id=9"), null);
         mCursor.moveToFirst();
 
         ArrayList<EventData> eventListData = new ArrayList<>();

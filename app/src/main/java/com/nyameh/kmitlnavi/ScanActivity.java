@@ -7,7 +7,6 @@ import android.database.sqlite.SQLiteDatabase;
 import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
@@ -132,7 +131,6 @@ public class ScanActivity extends AppCompatActivity implements ZXingScannerView.
     @Override
     public void onPause()
     {
-        Log.i("test", "======================== OnPause PPPPPPPPPPPPPPPPPPPP============");
         super.onPause();
         mScannerView.stopCamera();
     }

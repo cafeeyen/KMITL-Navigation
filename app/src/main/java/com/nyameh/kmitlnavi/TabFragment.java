@@ -51,7 +51,7 @@ public class TabFragment extends Fragment {
           switch (position)
           {
               case 0 : return new NewsFragment();
-              case 1 : return new EventFragment();
+              case 1 : return new FavoriteFragment();
           }
         return null;
         }
@@ -70,7 +70,7 @@ public class TabFragment extends Fragment {
                 case 0 :
                     return "News";
                 case 1 :
-                    return "Events";
+                    return "Favorite";
             }
                 return null;
         }

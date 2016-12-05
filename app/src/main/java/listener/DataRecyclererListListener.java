@@ -15,7 +15,6 @@ import com.nyameh.kmitlnavi.NyaMehDatabase;
 import com.nyameh.kmitlnavi.R;
 
 import model.EventData;
-import view.EventListViewHolder;
 
 public class DataRecyclererListListener implements View.OnClickListener {
 

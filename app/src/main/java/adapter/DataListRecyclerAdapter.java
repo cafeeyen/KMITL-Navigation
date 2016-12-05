@@ -1,18 +1,18 @@
 package adapter;
 
-        import android.content.Context;
-        import android.support.v7.widget.RecyclerView;
-        import android.view.LayoutInflater;
-        import android.view.View;
-        import android.view.ViewGroup;
+import android.content.Context;
+import android.support.v7.widget.RecyclerView;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
 
-        import com.nyameh.kmitlnavi.R;
+import com.nyameh.kmitlnavi.R;
 
-        import java.util.ArrayList;
+import java.util.ArrayList;
 
-        import listener.DataRecyclererListListener;
-        import model.EventData;
-        import view.EventListViewHolder;
+import listener.DataRecyclererListListener;
+import model.EventData;
+import view.EventListViewHolder;
 
 
 public class DataListRecyclerAdapter extends RecyclerView.Adapter<EventListViewHolder> {
@@ -35,7 +35,6 @@ public class DataListRecyclerAdapter extends RecyclerView.Adapter<EventListViewH
 
     @Override
     public EventListViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
-        //context = parent.getContext();
         inflater = LayoutInflater.from(parent.getContext());
         View v = inflater.inflate(R.layout.list_viewholder_row, parent, false);
 
