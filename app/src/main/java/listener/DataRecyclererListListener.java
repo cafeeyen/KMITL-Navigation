@@ -2,11 +2,16 @@ package listener;
 
 import android.app.Dialog;
 import android.content.Context;
+import android.content.Intent;
+import android.database.Cursor;
+import android.database.sqlite.SQLiteDatabase;
 import android.view.View;
 import android.view.Window;
 import android.widget.Button;
 import android.widget.TextView;
 
+import com.nyameh.kmitlnavi.MapsActivity;
+import com.nyameh.kmitlnavi.NyaMehDatabase;
 import com.nyameh.kmitlnavi.R;
 
 import model.EventData;
@@ -24,7 +29,6 @@ public class DataRecyclererListListener implements View.OnClickListener {
 
     @Override
     public void onClick(View view) {
-        EventListViewHolder vholder = (EventListViewHolder) view.getTag();
         final Dialog dialog = new Dialog(context);
         dialog.requestWindowFeature(Window.FEATURE_NO_TITLE);
         dialog.setCanceledOnTouchOutside(true);
@@ -45,11 +49,22 @@ public class DataRecyclererListListener implements View.OnClickListener {
             }
         });
 
-        Button navigateButton = (Button)dialog.findViewById(R.id.route_dialog_button);
-        navigateButton.setOnClickListener(new View.OnClickListener() {
+        Button navigateButton = (Button)dialog.findViewById(R.id.route_dialog_button) ;
+        navigateButton.setOnClickListener(new View.OnClickListener()
+        {
+
             @Override
-            public void onClick(View view) {
-                //cal evadata gat lat long
+            public void onClick(View view)
+            {
+                NyaMehDatabase mHelper = new NyaMehDatabase(context.getApplicationContext());
+                SQLiteDatabase mDb = mHelper.getReadableDatabase();
+                Cursor mCursor = mDb.rawQuery(String.format("SELECT * FROM " + NyaMehDatabase.TABLE_NAME)
+                        + " WHERE " + NyaMehDatabase.COL_CODE + "='" + evdata.getPosition() + "'", null);
+                mCursor.moveToFirst();
+                Intent intent = new Intent(context, MapsActivity.class);
+                intent.putExtra("Lat", Double.parseDouble(mCursor.getString(mCursor.getColumnIndex(NyaMehDatabase.COL_LATITUDE))));
+                intent.putExtra("Lng", Double.parseDouble(mCursor.getString(mCursor.getColumnIndex(NyaMehDatabase.COL_LONGITUDE))));
+                context.startActivity(intent);
             }
         });
         dialog.show();
