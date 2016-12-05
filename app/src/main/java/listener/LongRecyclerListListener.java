@@ -1,5 +1,6 @@
 package listener;
 
+import android.app.Activity;
 import android.content.ContentValues;
 import android.content.Context;
 import android.database.Cursor;
@@ -41,6 +42,10 @@ public class LongRecyclerListListener implements View.OnLongClickListener {
         Cursor mCursor = mDb.rawQuery("SELECT * FROM " + NyaMehDatabase.TABLE_NAME2
                 + " WHERE " + NyaMehDatabase.COL_TITLE + " = '" + eventData.getHeader() + "'", null);
         mCursor.moveToFirst();
+
+        Activity activity = (Activity) context;
+        activity.finish();
+        activity.startActivity(activity.getIntent());
 
         return false;
     }
