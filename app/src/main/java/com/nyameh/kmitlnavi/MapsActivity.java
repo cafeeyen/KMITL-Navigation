@@ -38,10 +38,12 @@ public class MapsActivity extends AppCompatActivity implements OnMapReadyCallbac
     private String errorMessage;
     private List<Step> step;
     private Boolean firstNavigateFlag = true;
+    private Boolean firstOnMap = true;
 
     private LatLng targetLatLng;
     private ArrayList<Double> ArLat;
     private ArrayList<Double> ArLng;
+    private ArrayList<String> ArName;
     private MarkerOptions targetMarker;
     private GoogleMap mMap;
     private LatLng user = new LatLng(0, 0);
@@ -68,11 +70,12 @@ public class MapsActivity extends AppCompatActivity implements OnMapReadyCallbac
                     mMap.animateCamera(CameraUpdateFactory.newLatLngBounds(bounds, 100));
                     Toast.makeText(MapsActivity.this, "Finished", Toast.LENGTH_SHORT).show(); //if errorMessage == "OK"
                 }
+
             }
-            else
+            else if(firstOnMap)
             {
-                CameraUpdate locate = CameraUpdateFactory.newLatLng(user);
-                mMap.animateCamera(locate);
+                firstOnMap = false;
+                mMap.animateCamera(CameraUpdateFactory.newLatLngZoom(user, 20));
             }
         }
 
@@ -95,6 +98,7 @@ public class MapsActivity extends AppCompatActivity implements OnMapReadyCallbac
         targetLatLng = new LatLng(getIntent().getDoubleExtra("Lat", 0), getIntent().getDoubleExtra("Lng", 0));
         ArLat = (ArrayList<Double>)getIntent().getSerializableExtra("ArLat");
         ArLng = (ArrayList<Double>)getIntent().getSerializableExtra("ArLng");
+        ArName = (ArrayList<String>)getIntent().getSerializableExtra("ArName");
         initializeLocationManager();
     }
 
@@ -107,7 +111,6 @@ public class MapsActivity extends AppCompatActivity implements OnMapReadyCallbac
             return;
 
         mMap.setMyLocationEnabled(true);
-        mMap.animateCamera(CameraUpdateFactory.zoomTo(20));
         mMap.getUiSettings().setMyLocationButtonEnabled(true);
         mMap.getUiSettings().setCompassEnabled(true);
         mMap.getUiSettings().setZoomControlsEnabled(true);
@@ -115,22 +118,22 @@ public class MapsActivity extends AppCompatActivity implements OnMapReadyCallbac
         if(targetLatLng.latitude != 0 && targetLatLng.longitude != 0)
         {
             navigateMode = true;
-            setMarker(targetLatLng.latitude, targetLatLng.longitude);
+            setMarker(targetLatLng.latitude, targetLatLng.longitude, "Target");
         }
 
         if(ArLat != null && ArLat.size() > 0)
         {
             for(int i=0; i<ArLat.size();i++)
             {
-                setMarker(ArLat.get(i), ArLng.get(i));
+                setMarker(ArLat.get(i), ArLng.get(i), ArName.get(i));
             }
         }
     }
 
-    private void setMarker(Double lat, Double lng)
+    private void setMarker(Double lat, Double lng, String title)
     {
         LatLng target = new LatLng(lat, lng);
-        targetMarker = new MarkerOptions().position(target);
+        targetMarker = new MarkerOptions().position(target).title(title);
         mMap.addMarker(targetMarker);
     }
 

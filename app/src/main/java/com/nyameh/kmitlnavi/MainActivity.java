@@ -53,6 +53,7 @@ public class MainActivity extends AppCompatActivity{
                  {
                      ArrayList<Double> lat = new ArrayList<>();
                      ArrayList<Double> lng = new ArrayList<>();
+                     ArrayList<String> name = new ArrayList<>();
                      ArrayList<EventData> data = getFavoriteListData();
 
                      NyaMehDatabase mHelper = new NyaMehDatabase(getApplicationContext());
@@ -66,9 +67,11 @@ public class MainActivity extends AppCompatActivity{
                          mCursor.moveToFirst();
                          lat.add(Double.parseDouble(mCursor.getString(mCursor.getColumnIndex(NyaMehDatabase.COL_LATITUDE))));
                          lng.add(Double.parseDouble(mCursor.getString(mCursor.getColumnIndex(NyaMehDatabase.COL_LONGITUDE))));
+                         name.add(mCursor.getString(mCursor.getColumnIndex(NyaMehDatabase.COL_NAME)));
                      }
                      intent.putExtra("ArLat", lat);
                      intent.putExtra("ArLng", lng);
+                     intent.putExtra("ArName", name);
                      startActivity(intent);
                  }
                  if (menuItem.getItemId() == R.id.nav_item_scan)
