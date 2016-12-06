@@ -107,7 +107,7 @@ MERGED from [com.google.android.gms:play-services-basement:8.4.0] D:\Project\QRN
 	android:name
 		ADDED from D:\Project\QRNS1.9\app\src\main\AndroidManifest.xml:40:13-58
 activity#com.nyameh.kmitlnavi.MapsActivity
-ADDED from D:\Project\QRNS1.9\app\src\main\AndroidManifest.xml:43:9-59
+ADDED from D:\Project\QRNS1.9\app\src\main\AndroidManifest.xml:43:9-50
 	android:name
 		ADDED from D:\Project\QRNS1.9\app\src\main\AndroidManifest.xml:43:19-47
 uses-sdk

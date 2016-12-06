@@ -63,6 +63,7 @@ public class ClickRecyclerListListener implements View.OnClickListener {
                 Intent intent = new Intent(context, MapsActivity.class);
                 intent.putExtra("Lat", Double.parseDouble(mCursor.getString(mCursor.getColumnIndex(NyaMehDatabase.COL_LATITUDE))));
                 intent.putExtra("Lng", Double.parseDouble(mCursor.getString(mCursor.getColumnIndex(NyaMehDatabase.COL_LONGITUDE))));
+                intent.putExtra("title", mCursor.getString(mCursor.getColumnIndex(NyaMehDatabase.COL_NAME)));
                 context.startActivity(intent);
             }
         });

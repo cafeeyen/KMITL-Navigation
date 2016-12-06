@@ -8,6 +8,7 @@ import android.support.design.widget.NavigationView;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
+import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
@@ -27,6 +28,7 @@ public class MainActivity extends AppCompatActivity{
     FragmentManager mFragmentManager;
     FragmentTransaction mFragmentTransaction;
     Fragment currentFragment;
+    Fragment oldFragment;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -39,6 +41,7 @@ public class MainActivity extends AppCompatActivity{
 
         if (savedInstanceState == null){
             currentFragment = new TabFragment();
+            oldFragment = currentFragment;
             mFragmentTransaction = mFragmentManager.beginTransaction();
             mFragmentTransaction.replace(R.id.containerView, currentFragment).commit();
         }
@@ -49,6 +52,7 @@ public class MainActivity extends AppCompatActivity{
                  mDrawerLayout.closeDrawers();
                  mFragmentTransaction = mFragmentManager.beginTransaction();
                  if (menuItem.getItemId() == R.id.nav_item_event_news){currentFragment = new TabFragment();}
+                 if (menuItem.getItemId() == R.id.nav_item_place){currentFragment = new PlaceFragment();}
                  if (menuItem.getItemId() == R.id.nav_item_map)
                  {
                      ArrayList<Double> lat = new ArrayList<>();
@@ -79,6 +83,13 @@ public class MainActivity extends AppCompatActivity{
                      Intent intent = new Intent(getApplicationContext(), ScanActivity.class);
                      startActivity(intent);
                  }
+
+                 //insert fragment
+                 if(!(currentFragment.getClass().equals(oldFragment.getClass()))){  // && mFragmentManager.getBackStackEntryCount() > 0)
+                     Log.i("test", "============= Insert =============== " + mFragmentManager.getBackStackEntryCount());
+                     mFragmentTransaction.add(R.id.containerView, currentFragment).addToBackStack(null).commit();
+                     oldFragment = currentFragment;
+                 }
                  return false;
             }
         });
@@ -89,6 +100,28 @@ public class MainActivity extends AppCompatActivity{
 
         mDrawerLayout.setDrawerListener(mDrawerToggle);
         mDrawerToggle.syncState();
+    }
+
+    @Override
+    public void onBackPressed() {
+        int count = mFragmentManager.getBackStackEntryCount();
+        Log.i("test", "============= Back Press =============== " + mFragmentManager.getBackStackEntryCount());
+
+        mDrawerLayout = (DrawerLayout) findViewById(R.id.drawerLayout);
+        if (mDrawerLayout.isDrawerOpen(GravityCompat.START)) {
+            mDrawerLayout.closeDrawer(GravityCompat.START);
+        }
+        else{
+            if (count == 0) {
+                //some dialog to confirm before getting out
+                super.onBackPressed();
+            } else {
+                oldFragment = new TabFragment();
+                for (int round = count; round >= 1; --round){ //for loop is work, I don't know why while didn't work
+                    mFragmentManager.popBackStack();
+                }
+            }
+        }
     }
 
 }

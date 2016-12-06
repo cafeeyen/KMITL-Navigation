@@ -70,8 +70,9 @@ public class MapsActivity extends AppCompatActivity implements OnMapReadyCallbac
                     mMap.animateCamera(CameraUpdateFactory.newLatLngBounds(bounds, 100));
                 }
             }
-            else
+            else if(firstOnMap)
             {
+                firstOnMap = false;
                 CameraUpdate locate = CameraUpdateFactory.newLatLng(user);
                 mMap.animateCamera(locate);
             }
@@ -116,7 +117,7 @@ public class MapsActivity extends AppCompatActivity implements OnMapReadyCallbac
         if(targetLatLng.latitude != 0 && targetLatLng.longitude != 0)
         {
             navigateMode = true;
-            setMarker(targetLatLng.latitude, targetLatLng.longitude, "Target");
+            setMarker(targetLatLng.latitude, targetLatLng.longitude, getIntent().getStringExtra("title"));
         }
 
         if(ArLat != null && ArLat.size() > 0)

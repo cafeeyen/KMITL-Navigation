@@ -111,7 +111,6 @@ public class ScanActivity extends AppCompatActivity implements ZXingScannerView.
                     placeCode = result.substring(25);
                     return true;
                 }
-                return true;
             }
         }
         return false;

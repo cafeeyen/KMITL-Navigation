@@ -6,13 +6,14 @@
     android:background="@color/bear_brown_background">
 
     <TextView
+        android:text="Hold for add to Favorite"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hold on list for add to favorite"
-        android:textSize="22sp"
         android:textColor="@color/bear_brown_helptext"
+        android:textSize="22sp"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="120dp" />
+        android:id="@+id/textView"
+        android:layout_marginTop="60dp" />
 
     <android.support.v7.widget.RecyclerView
         android:id="@+id/favorite_recycler_view"

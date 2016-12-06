@@ -18,7 +18,6 @@ import model.EventData;
 public class FavoriteFragment extends Fragment {
 
     private static ArrayList<EventData> FavoriteListData;
-
     public static ArrayList<EventData> getFavoriteListData()
     {
         return FavoriteListData;

@@ -111,7 +111,7 @@ public class NyaMehDatabase extends SQLiteOpenHelper {
         db.execSQL(String.format(
                 "INSERT INTO %s (%s, %s, %s, %s, %s) VALUES('%s', '%s', '%s', '%s', '%s');",
                 TABLE_NAME, COL_NAME, COL_DESCRIPTION, COL_LATITUDE, COL_LONGITUDE, COL_CODE,
-                "สอาคารเรียนรวมคณะวิศวกรรมศาสตร์12ชั้น", "อาคารเรียนรวมของคณะวิศวกรรมศาสตร์ มีทั้งสิ้น12ชั้นและสูงที่สุดในสถาบัน", "13.727366", "100.772513", "L013"
+                "อาคารเรียนรวมคณะวิศวกรรมศาสตร์12ชั้น", "อาคารเรียนรวมของคณะวิศวกรรมศาสตร์ มีทั้งสิ้น12ชั้นและสูงที่สุดในสถาบัน", "13.727366", "100.772513", "L013"
         ));
 
         db.execSQL(String.format(
