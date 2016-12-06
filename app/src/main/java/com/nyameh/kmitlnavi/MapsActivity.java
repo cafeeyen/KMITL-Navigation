@@ -10,6 +10,7 @@ import android.location.LocationManager;
 import android.support.v4.app.ActivityCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.widget.Toast;
 
 import com.akexorcist.googledirection.DirectionCallback;
@@ -39,6 +40,8 @@ public class MapsActivity extends AppCompatActivity implements OnMapReadyCallbac
     private Boolean firstNavigateFlag = true;
 
     private LatLng targetLatLng;
+    private ArrayList<Double> ArLat;
+    private ArrayList<Double> ArLng;
     private MarkerOptions targetMarker;
     private GoogleMap mMap;
     private LatLng user = new LatLng(0, 0);
@@ -90,6 +93,8 @@ public class MapsActivity extends AppCompatActivity implements OnMapReadyCallbac
         SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager().findFragmentById(R.id.map);
         mapFragment.getMapAsync(this);
         targetLatLng = new LatLng(getIntent().getDoubleExtra("Lat", 0), getIntent().getDoubleExtra("Lng", 0));
+        ArLat = (ArrayList<Double>)getIntent().getSerializableExtra("ArLat");
+        ArLng = (ArrayList<Double>)getIntent().getSerializableExtra("ArLng");
         initializeLocationManager();
     }
 
@@ -106,12 +111,27 @@ public class MapsActivity extends AppCompatActivity implements OnMapReadyCallbac
         mMap.getUiSettings().setMyLocationButtonEnabled(true);
         mMap.getUiSettings().setCompassEnabled(true);
         mMap.getUiSettings().setZoomControlsEnabled(true);
+
         if(targetLatLng.latitude != 0 && targetLatLng.longitude != 0)
         {
             navigateMode = true;
-            targetMarker = new MarkerOptions().position(targetLatLng);
-            mMap.addMarker(targetMarker);
+            setMarker(targetLatLng.latitude, targetLatLng.longitude);
         }
+
+        if(ArLat != null && ArLat.size() > 0)
+        {
+            for(int i=0; i<ArLat.size();i++)
+            {
+                setMarker(ArLat.get(i), ArLng.get(i));
+            }
+        }
+    }
+
+    private void setMarker(Double lat, Double lng)
+    {
+        LatLng target = new LatLng(lat, lng);
+        targetMarker = new MarkerOptions().position(target);
+        mMap.addMarker(targetMarker);
     }
 
     private void initializeLocationManager()

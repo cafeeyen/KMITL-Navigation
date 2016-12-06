@@ -3,11 +3,6 @@ package model;
 public class EventData {
     private String header, descrpt, month, date, position;
 
-    public EventData(String header, String descrpt){
-        this.header = header;
-        this.descrpt = descrpt;
-    }
-
     public EventData(String header, String descrpt, String month, String date, String position){
         this.header = header;
         this.descrpt = descrpt;

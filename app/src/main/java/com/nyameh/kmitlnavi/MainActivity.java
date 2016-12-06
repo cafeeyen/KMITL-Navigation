@@ -1,6 +1,8 @@
 package com.nyameh.kmitlnavi;
 
 import android.content.Intent;
+import android.database.Cursor;
+import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
 import android.support.design.widget.NavigationView;
 import android.support.v4.app.Fragment;
@@ -11,6 +13,12 @@ import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.MenuItem;
+
+import java.util.ArrayList;
+
+import model.EventData;
+
+import static com.nyameh.kmitlnavi.FavoriteFragment.getFavoriteListData;
 
 public class MainActivity extends AppCompatActivity{
 
@@ -43,7 +51,24 @@ public class MainActivity extends AppCompatActivity{
                  if (menuItem.getItemId() == R.id.nav_item_event_news){currentFragment = new TabFragment();}
                  if (menuItem.getItemId() == R.id.nav_item_map)
                  {
+                     ArrayList<Double> lat = new ArrayList<>();
+                     ArrayList<Double> lng = new ArrayList<>();
+                     ArrayList<EventData> data = getFavoriteListData();
+
+                     NyaMehDatabase mHelper = new NyaMehDatabase(getApplicationContext());
+                     SQLiteDatabase mDb = mHelper.getReadableDatabase();
+
                      Intent intent = new Intent(getApplicationContext(), MapsActivity.class);
+                     for(EventData i : data)
+                     {
+                         Cursor mCursor = mDb.rawQuery(String.format("SELECT * FROM " + NyaMehDatabase.TABLE_NAME)
+                                 + " WHERE " + NyaMehDatabase.COL_CODE + "='" + i.getPosition() + "'", null);
+                         mCursor.moveToFirst();
+                         lat.add(Double.parseDouble(mCursor.getString(mCursor.getColumnIndex(NyaMehDatabase.COL_LATITUDE))));
+                         lng.add(Double.parseDouble(mCursor.getString(mCursor.getColumnIndex(NyaMehDatabase.COL_LONGITUDE))));
+                     }
+                     intent.putExtra("ArLat", lat);
+                     intent.putExtra("ArLng", lng);
                      startActivity(intent);
                  }
                  if (menuItem.getItemId() == R.id.nav_item_scan)

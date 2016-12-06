@@ -17,7 +17,12 @@ import model.EventData;
 
 public class FavoriteFragment extends Fragment {
 
-    private ArrayList<EventData> FavoriteListData;
+    private static ArrayList<EventData> FavoriteListData;
+
+    public static ArrayList<EventData> getFavoriteListData()
+    {
+        return FavoriteListData;
+    }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
