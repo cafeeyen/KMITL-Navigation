@@ -26,8 +26,8 @@ public class FavoriteFragment extends Fragment {
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.events_fragment_layout, container, false);
-        RecyclerView recyclerView = (RecyclerView) view.findViewById(R.id.event_recycler_view);
+        View view = inflater.inflate(R.layout.favorite_fragment_layout, container, false);
+        RecyclerView recyclerView = (RecyclerView) view.findViewById(R.id.favorite_recycler_view);
 
         NyaMehDatabase mHelper = new NyaMehDatabase(getActivity());
         SQLiteDatabase mDb = mHelper.getReadableDatabase();

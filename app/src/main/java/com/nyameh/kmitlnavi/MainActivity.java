@@ -91,9 +91,4 @@ public class MainActivity extends AppCompatActivity{
         mDrawerToggle.syncState();
     }
 
-    @Override
-    protected void onResume(){
-        super.onResume();
-        Log.i("Test====", "=============== OnResume ==============");
-    }
 }

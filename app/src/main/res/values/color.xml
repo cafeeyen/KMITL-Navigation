@@ -13,5 +13,7 @@
     <color name="warm_a_gray">#aaaaaa</color>
     <color name="warm_5_gray">#555555</color>
     <color name="pure_red">#FF0000</color>
+    <color name="bear_brown_background">#3a3a3a</color>
+    <color name="bear_brown_helptext">#88888888</color>
 
 </resources>

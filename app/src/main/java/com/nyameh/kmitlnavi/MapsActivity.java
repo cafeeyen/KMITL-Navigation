@@ -68,14 +68,12 @@ public class MapsActivity extends AppCompatActivity implements OnMapReadyCallbac
                     builder.include(targetLatLng);
                     LatLngBounds bounds = builder.build();
                     mMap.animateCamera(CameraUpdateFactory.newLatLngBounds(bounds, 100));
-                    Toast.makeText(MapsActivity.this, "Finished", Toast.LENGTH_SHORT).show(); //if errorMessage == "OK"
                 }
-
             }
-            else if(firstOnMap)
+            else
             {
-                firstOnMap = false;
-                mMap.animateCamera(CameraUpdateFactory.newLatLngZoom(user, 20));
+                CameraUpdate locate = CameraUpdateFactory.newLatLng(user);
+                mMap.animateCamera(locate);
             }
         }
 
@@ -151,7 +149,7 @@ public class MapsActivity extends AppCompatActivity implements OnMapReadyCallbac
     }
 
 
-    private void callPath() /** connect to google ask for path, limit 2xxx per day. error message now can't call from other */
+    private void callPath() // connect to google ask for path, limit 2xxx per day. error message now can't call from other
     {
         GoogleDirection.withServerKey(SERVER_KEY_STRING)
                 .from(user)
@@ -169,17 +167,21 @@ public class MapsActivity extends AppCompatActivity implements OnMapReadyCallbac
                     }
 
                     @Override
-                    public void onDirectionFailure(Throwable t) {errorMessage = "DirectionFailure";}
+                    public void onDirectionFailure(Throwable t) {
+                        errorMessage = "DirectionFailure";
+                        Toast.makeText(MapsActivity.this, "No internet connection, Can't find path now", Toast.LENGTH_SHORT).show();
+                    }
                 });
     }
 
-    private Boolean drawPath(List<Step> step, String errorMessage) /**return true if path can draw, but now not use*/
+    private Boolean drawPath(List<Step> step, String errorMessage) //return true if path can draw, but now not use
     {
         if(step != null && step.size() >= 1)
         {
             ArrayList<PolylineOptions> polylineOptionList = DirectionConverter.createTransitPolyline(this, step, 5, Color.RED, 3, Color.BLUE);
             for (PolylineOptions polylineOption : polylineOptionList) {
                 mMap.addPolyline(polylineOption);
+                Toast.makeText(MapsActivity.this, "Finished", Toast.LENGTH_SHORT).show();
             }
             return true;
         }
